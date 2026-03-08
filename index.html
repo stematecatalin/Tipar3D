@@ -11,344 +11,523 @@
     <meta name="keywords"
         content="printare 3D, tipar 3d, produse printate 3d, obiecte 3d, figurine 3d, piese 3d, personalizare 3d, magazin 3d">
 
-
     <link rel="icon" type="image/png" href="resurse/imagini/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="resurse/imagini/favicon.svg" />
     <link rel="shortcut icon" href="resurse/imagini/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="resurse/imagini/apple-touch-icon.png" />
     <link rel="manifest" href="resurse/imagini/site.webmanifest" />
 
-
     <title>Tipar3D - Magazin produse printate 3D</title>
 
 </head>
 
 <body>
+
     <header>
         <h1>Tipar3D</h1>
-    <nav>
-        <ul>
-            <li>Acasa
-                <ul>
-                    <li>
-                        <a href="#welcome">Bine ati venit!</a>
-                    </li>
-                    <li>                        <a href="#promotii">Promotii</a></li>
-                </ul>
-            </li>
-            <li>Despre</li>
-            <li>Inregistrare</li>
-        </ul>
-    </nav>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Acasa</a>
+                    <ul>
+                        <li><a href="#bun_venit">Bine ati venit</a></li>
+                        <li><a href="#despre">Despre noi</a></li>
+                        <li><a href="#servicii">Servicii</a></li>
+                        <li><a href="#produse">Produse</a></li>
+                        <li><a href="#beneficii">Beneficii</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Inregistrare</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
 
-    <main> <!--  comentariu -->
-        <div id="grid-pagina">
+    <main>
 
-            <section id="welcome">
-                <hgroup>
-                    <h2>Bine ati venit</h2>
-                    <p class="subtitlu">Prezentarea cofetăriei</p>
-                </hgroup>
+        <section id="bun_venit">
+            <hgroup>
+                <h2>Magazin 3D specializat in printare 3D</h2>
+                <p class="subtitlu">
+                    Produse printate 3D personalizate prin tehnologie moderna
+                </p>
+            </hgroup>
 
-                <p class="intro">Vă mulțumim că ne vizitați site-ul. Luați de aici niște biscuiți virtuali. Poftă bună!</p>
-                
-                <div class="intro-oferte"><div>Pateuri</div><div>Bomboane</div><div>Fursecuri</div><div>Prajituri</div><div>Torturi</div></div>
-                <p class="anunt intro">Vă puteți îngrășa atât la sediul nostru cât și la propriul dumneavoastră domiciliu, cu ajutorul ofertei noastre de livrare a produselor prin curier.</p>
-                <div id="dv-prezentare-1">
-                    <div id="dv-prezentare">
+            <p>
+                Tipar3D este un <b>magazin 3D</b> specializat in
+                <b>printare 3D</b> si <b>tipar 3d</b> pentru clienti
+                care doresc <b>produse printate 3d</b> personalizate.
+            </p>
+
+            <p>
+                Folosim tehnologie moderna de printare 3D pentru a crea
+                <b>obiecte 3d</b>, <b>figurine 3d</b> si <b>piese 3d</b>
+                functionale, adaptate nevoilor fiecarui client.
+            </p>
+        </section>
+
+        <section id="despre">
+
+            <h2>Despre serviciile noastre de printare 3D</h2>
+            <p>
+                Tipar3D este un magazin 3D specializat in printare 3D si tipar 3d
+                pentru realizarea de produse printate 3d personalizate.
+            </p>
+
+            <figure>
+
+                <a href="https://eu.store.bambulab.com/products/p1s?from=navigation">
+
                     <picture>
-                        <!-- il ia pe primul care se potriveste cu query-ul din media-->
-                        <source srcset="./resurse/imagini/macarons-200x200.jpg" media="(max-width:700px)"/>
-                        <source srcset="./resurse/imagini/macarons.jpg" media="(max-width:1200px)"/>
-                        <img src="./resurse/imagini/macarons-640x360.jpg" alt="text"/>
+
+                        <source srcset="resurse/imagini/imprimanta-200x200.png" media="(max-width: 600px)">
+
+                        <source srcset="resurse/imagini/imprimanta-700x700.png" media="(max-width: 1000px)">
+
+                        <img src="resurse/imagini/imprimanta-1200x1000.png" alt="Imprimanta 3D Bambu Lab P1S"
+                            title="Imprimanta 3D utilizata pentru realizarea produselor printate 3D">
+
                     </picture>
-                </div>
-            </div>
-            <hr class="prajituri"/>
-            <div id="container-video">
-                <img style="width:50%" class="farfurie" src="resurse/imagini/farfurie-flori-albastre.png" alt="farfurie" title="O farfurie cu flori">
-                <div id="centrare-video">
-                    <div id="clip-video">
-                        <div id="stil-video">
-                            <video width="320" height="240"  playsinline autoplay loop muted>
-                                <source src="resurse/video/Chocolate.mp4" type="video/mp4">
-                                <source src="resurse/video/Chocolate.ogv" type="video/ogv">
-                                <track default src="data:image/png;base64, V0VCVlRUIC0gQ2lvY29sYXTEgwoKMDA6MDAuMDAwIC0tPiAwMDowMy4wMDAgbGluZTowCkNpb2NvbGF0xIMhISEKCjAwOjAzLjAwMCAtLT4gMDA6MDcuMDAwIGxpbmU6MApNdWx0xIMgY2lvY29sYXTEgyEhISEKCjAwOjA5LjAwMCAtLT4gMDA6MTQuMDAwIGxpbmU6MApVcHMsIGFtIG11cmTEg3JpdCBtYXNhIQoKMDA6MTQuNTAwIC0tPiAwMDoxOS4wMDAgbGluZTowCk51IGNvbnRlYXrEgyEgQ2lvY29sYXTEg8SDxIPEg8SDxIMhCgo=" kind="captions" srclang="ro" label="romana">
-                                <track src="data:image/png;base64, V0VCVlRUIC0gQ2hvY29sYXRlDQoNCjAwOjAwLjAwMCAtLT4gMDA6MDMuMDAwDQpDaG9jb2xhdGUhISENCg0KMDA6MDMuMDAwIC0tPiAwMDowNy4wMDANCkxvdHMgb2YgY2hvY29sYXRlISEhIQ0KDQowMDowOS4wMDAgLS0+IDAwOjE0LjAwMA0KT3VwcywgdGFibGUgZ290IGRpcnR5IQ0KDQowMDoxNC41MDAgLS0+IDAwOjE5LjAwMA0KRG9lc24ndCBtYXR0ZXIhIENob2NvbGF0ZSEhIQ0KDQo=" kind="captions" srclang="en" label="engleza">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section>
-            <section id="promotii">
-                <h2>Promoții și oferte</h2>
-                <article>
-                    <h3 class="titlu">Super ofertă de weekend</h3>
-                    <p><b>Cofetăria Dulcelind</b> oferă <b>reduceri de <s>10%</s> <ins>15%</ins></b> pentru toate produsele cumpărate în intervalul 10-14.</p>
-                    <p>Oferta este valabilă doar în zilele de sâmbătă și duminică la sediile <abbr title="Cofetăria Dulcelind">CD</abbr>.</p>
-                    <p>în cazul în care cumpărați mai mult de zece <b>prăjituri</b> primiți si un card de fidelitate pentru Salvare!</p>
-                </article>
-                <article>
-                    <h3>Ofertă pachet</h3>
-                    <p>Cofetăria Dulcelind oferă pachete cuprinzând:</p>
-                    <ol>
-                        <li><i lang="en">icecream</i></li>
-                        <li>Un set de 4 pateuri de sortimente diferite</li>
-                        <li>O prajitură la alegere</li>
-                        <li>Un <i>suc</i></li>
-                        <li>Gratis: o farfurioară ornata cu inițiala cofetăriei</li>
-                        <li>Gratis: o felicitare cu imaginea cofetăriei</li>
-                        <li>Gratis: un pui de pisică (am găsit niște pui de pisică abandonați lângă cofetărie și noi nu îi putem păstra. Nu ne reclamați la ANPC, <!--abreviere--> mulțumim de înțelegere!).  </li>
-                    </ol>
-                    
-                </article>
-                <article>
-                    <h3>Prajituri de Halloween</h3>
-                    <p>Noi punem suflet în prăjiturile noastre!... Literalmente!</p>
-                    <p>Chiar și dacă nu e Halloween încă, avem prajituri bântuite, de toate dimensiunile</p>
-                    <ol>
-                        <li>Când vreți să gustați o prajitura, aceasta țipă, sau, mai rău, vă spune sincer că ar cam trebui să vă mai spălați pe dinți.</li>
-                        <li>Când puneți mai multe prăjituri pe platou, vor conspira împotriva dumneavoastră... hehe... dar n-au ce să vă facă, în final sunt doar niște prăjituri</li>
-                        <li>Nu încercați să mușcați vreun fursec de Halloween, căci va mușca el înainte. Ați fost avertizați.</li>
 
-                    </ol>
-                    
-                </article>
-                <article>
-                    <h3>Prăjituri de Anul Nou</h3>
-                    <p>La începutul fiecărui an vă faceți planuri că de data asta veti trăi mai sănatos, veți mânca mai chibzuit și vă veți duce din prima zi la sală. Știm cu toții că e doar o amăgire. Luați mai bine o prăjitură, măcar să va delectați cu un gust bun și dulce în timp ce plângeți despre kilogramele în plus.</p>
-                    
-                </article>
-            </section>
-            <section id="produse">
-                <h2>Produsele noastre</h2>
-                <p>Vă oferim o multitudine de metode să câștigați cu succes kilograme în plus.</p>
-                <section>
-                    <h3>Torturi</h3>
-                    <p>În caz că nu le puteți mânca fiindcă sunteți la dietă și doar vă uitați la ele, puneți accentul pe u!</p>
-                    <p>Avem torturi cu:</p>
-                    <ul>
-                        <li>ciocolată</li>
-                        <li>frișcă</li>
-                        <li>fructe</li>
-                        <li>dulceață</li>
-                        <li>înghețată</li>
-                        <li>regrete</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Prăjituri</h3>
-                    <p>Oferim prăjiturile clasice plus câteva creations personnelles, oui!</p>
-                    <p>Prăjituri:</p>
-                    <ul>
-                        <li>savarină</li>
-                        <li>amandină</li>
-                        <li>tartă cu fructe</li>
-                        <li>doboș</li>
-                        <li>carpați (orientali, meridionali și occidentali)</li>
-                        <li>ecler</li>
-                        <li>tiramisu</li>
-                        <li>colivă</li>
-                    </ul>
-                </section>
-                
-                <section>
-                    <h3>Pateuri</h3>
-                    <p>Pateurile noastre sunt umplute cu:</p>
-                    <ul>
-                        <li>brânză</li>
-                        <li>pizza</li>
-                        <li>spanac</li>
-                        <li>ciuperci</li>
-                        <li>compoziție secretă (sincer, nici noi nu mai știm ce conține)</li>
-                    </ul>
-                </section>
-            </section>
-            <section id="orar">
-                <h2>Orar</h2>
-                <table id="tab-orar">
-                    <thead>
+                </a>
 
-                        <tr>
-                            <th>Cod</th>
-                            <th>Perioadă</th>
-                            <th>Zi</th>
-                            <th>Interval dimineata</th>
-                            <th>Pauza de masa</th>
-                            <th>Interval seară</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td rowspan="5">Zile<br/>Lucrătoare</td>
-                            <td>Luni</td>
-                            <td>10-12</td>
-                            <td>12-14</td>
-                            <td>14-20</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            
-                            <td>Marti</td>
-                            <td>9-12</td>
-                            <td>12-14</td>
-                            <td>14-21</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            
-                            <td>Miercuri</td>
-                            <td>9-11</td>
-                            <td>11-13</td>
-                            <td>14-21</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            
-                            <td>Joi</td>
-                            <td>9-11</td>
-                            <td>11-13</td>
-                            <td>14-21</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            
-                            <td>Vineri</td>
-                            <td>9-12</td>
-                            <td>12-14</td>
-                            <td>14-19</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td rowspan="2">Weekend</td>
-                            <td>Sambata</td>
-                            <td>10-12</td>
-                            <td>12-13</td>
-                            <td>13-16</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Duminica</td>
-                            <td>10-14</td>
-                            <td>-</td>
-                            <td>inchis</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="6">Închis cu ocazia sărbătorilor legale, sau, când ne e mai lene așa.</td>
-                        </tr>
-                    </tfoot>
-                </table> 
-                <p><strong>Atentie!!!</strong> in prima zi a lunii facem inventar.</p>
-            </section>
-            <figure id="fig1" class="fg-img">
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose 1</figcaption>
-            </figure>
-            <figure id="fig2" class="fg-img">
-            <img src="resurse/imagini/briose-frisca.png" alt="briose">
-            <figcaption>Briose 2</figcaption>
-            </figure>
-            <figure  id="fig3" class="fg-img">
-            <img src="resurse/imagini/briose-frisca.png" alt="briose">
-            <figcaption>Briose 3</figcaption>
-            </figure>
-            <figure  id="fig4">
-            <img src="resurse/imagini/briose-frisca.png" alt="briose">
-            <figcaption>Briose 3</figcaption>
-            </figure>
-            <section id="anunturi">
-                <h2 class="fg-img">Anunțuri</h2>
-                <p><time datetime="2025-07-20">20 iulie 2025</time>Nu avem nimic de anuntat, doar a trecut ceva vreme de la ultimul anunț și ne-am gândit să mai scriem ceva pe aici.</p>
-                <p><time datetime="2022-01-05">5 ianuarie 2022</time> <strong>No more Covid!!!!</strong></p>
-               
-                <p><time datetime="2020-03-15">15 martie 2020</time> <span>Am adăugat o prăjitură noua în meniu</span></p>
-                <p><time datetime="2020-04-05">5 aprilie 2020</time> <span>Am adăugat o prăjitură noua în meniu</span></p>
-                <p><time datetime="2020-07-05">5 iulie 2020</time> Am adăugat o prăjitură noua în meniu</p>
-                <p><time datetime="2020-09-15">15 septembrie 2020</time> Am adăugat un fursec nou în meniu</p>
-                <p><time datetime="2020-12-20">20 decembrie 2020</time> Nu avem nimic de anunțat, dar ne era dor de voi.</p>
-                <p><time datetime="2020-12-28">28 decembrie 2020</time> Am adăugat o prăjitură noua în meniu</p>
-                <p><time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou fericit!</p>
-                <p><time datetime="2021-02-11">11 februarie 2021</time> Studiile au arătat că prăjiturile sunt cele mai sănătoase alimente. 
-                    E adevărat că doar studiile noastre, dar astea sunt detalii. </p>
-            </section>
-            <section id="index-intrebari">
-                <h2>Întrebări frecvente</h2>
-                <details><summary>Produsele dumneavoastră provoacă afecțiuni dentare?</summary>
-                    <p>Da!</p>
-                </details>
-                <details><summary>Produsele dumneavoastră provoacă afecțiuni ale sistemului digestiv (precum diabetul)?</summary>
-                    <p>Da!</p>
-                </details>
-                <details><summary>Produsele dumneavoastră provoacă obezitate?</summary>
-                    <p>Foarte! Da!</p>
-                </details>
-                <details><summary>Sunteți cumva asociați cu medicii dentiști, medicii gastroenterologi, companiile farmaceutice și sălile de Fitness?</summary>
-                    <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
-                </details>
-            </section>
+                <figcaption>
+                    Imprimanta utilizata pentru <b>printare 3D</b>.
+                </figcaption>
 
-        </div>
-        <section id="galerie-statica">
-            <h2>Galerie</h2>
-            <div id="grid-galerie">
-                <figure>
-                    <div>
-                        <img src="resurse/imagini/briose-frisca.png" alt="briose"></div>
-                
-                <figcaption>Briose</figcaption>
-                </figure>
-                <figure>
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose</figcaption>
-                </figure>
-                <figure>
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose</figcaption>
-                </figure>
-                <figure>
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose</figcaption>
-                </figure>
-                <figure>
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose</figcaption>
-                </figure>
-                <figure>
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose</figcaption>
-                </figure>
-                <figure>
-                <img src="resurse/imagini/briose-frisca.png" alt="briose">
-                <figcaption>Briose</figcaption>
-                </figure>
-            
-            </div>
-        </section>
-        <section id="retete">
-            <h2>Retete</h2>
-            <p>Dacă doriți să vă faceți singuri prăjiturile (dar de ce ati face asta când ne aveți pe noi???) 
-                vă recomandăm următoarele rețete simple pe care sperăm să le încercați, să vedeți cât e de <s>ușor</s> să le faceți, 
-                să vă dați în final bătuți și să veniți să cumpărați de la noi &#128512;. Mulțumim! &#128513;</p>
-            <div class="container-iframe">
-                <div class="taburi-iframe">
-                <a href="https://www.youtube.com/embed/qtlhdIfojmc?si=TqTMN4k_BY-iuvxx" target="ifr-video">Reteta tort vanilie</a>
-                <a href="https://www.youtube.com/embed/dsJtgmAhFF4" target="ifr-video" >Reteta tort ciocolata</a>
-                <a href="https://www.youtube.com/embed/Wtxbt-CpA2s" target="ifr-video" >Reteta tort căpșuni</a><br/>
-                </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qtlhdIfojmc?si=TqTMN4k_BY-iuvxx" name="ifr-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
+            </figure>
 
-            </div>
+            <p>
+                Prin personalizare 3d si tehnologie moderna, realizam obiecte 3d
+                unice si piese 3d adaptate cerintelor clientilor nostri.
+            </p>
+            <p>
+                Un exemplu de utilizare a tehnologiei poate fi gasit aici:
+                <a href="https://en.wikipedia.org/wiki/3D_printing#Applications" target="_blank">
+                    https://en.wikipedia.org/wiki/3D_printing#Applications
+                </a>
+            </p>
+            <p>
+                Afla mai multe despre tehnologia moderna de printare 3D pe
+                <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
+                    Wikipedia
+                </a>.
+            </p>
+
         </section>
 
+        <section id="termeni">
 
+            <h2>Termeni folositi in printare 3D</h2>
+
+            <dl>
+
+                <dt>Printare 3D</dt>
+                <dd>Proces de creare a unui obiect tridimensional prin depunerea succesiva de material.</dd>
+
+                <dt>Tipar 3D</dt>
+                <dd>Tehnologie moderna utilizata pentru realizarea produselor printate 3D.</dd>
+
+                <dt>Personalizare 3D</dt>
+                <dd>Adaptarea unui model 3D in functie de cerintele clientului.</dd>
+
+            </dl>
+
+        </section>
+
+        <section id="servicii">
+
+            <h2>Servicii de tipar 3D si personalizare 3D</h2>
+
+            <h3>Produse printate 3D la comanda</h3>
+
+            <p>
+                Oferim produse printate 3d realizate la comanda,
+                inclusiv figurine 3d tematice, obiecte 3d decorative
+                si piese 3d pentru prototipuri.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7lKpzGtoQX0?si=HqwOU_pSGtT6HhB8"
+                name="video3d" title="Tutorial modelare 3D" frameborder="0" allowfullscreen>
+            </iframe>
+            <p>
+                Puteti descarca un exemplu de model 3D:
+                <a href="resurse/downloads/model3d.3mf" download="model3d.stl">
+                    Descarca model 3D
+                </a>
+            </p>
+
+            <section id="playlist-video">
+
+                <h2>Playlist tutoriale printare 3D</h2>
+
+                <p>
+                    Urmatorul playlist prezinta tutoriale despre modelare si printare 3D.
+                    Videoclipurile se redau automat si playlistul se reia de la inceput
+                    dupa finalul ultimului videoclip.
+                </p>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLGqRUdq5ULsONnjEEPeBxxStEsobDKAtV&autoplay=1&loop=1&controls=1&playlist=PLGqRUdq5ULsONnjEEPeBxxStEsobDKAtV"
+                    title="Playlist tutoriale printare 3D" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </section>
+            <table>
+
+                <caption>Materiale utilizate pentru printare 3D si pret estimativ</caption>
+
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Pret (lei / gram)</th>
+                        <th>Rezistenta</th>
+                        <th>Utilizare recomandata</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td rowspan="2">PLA</td>
+                        <td>0.25 lei / gram</td>
+                        <td>Medie</td>
+                        <td>Figurine decorative</td>
+                    </tr>
+
+                    <tr>
+                        <td>0.25 lei / gram</td>
+                        <td>Medie</td>
+                        <td>Prototipuri si obiecte usoare</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">PETG</td>
+                        <td>0.35 lei / gram</td>
+                        <td>Ridicata</td>
+                        <td>Piese functionale</td>
+                    </tr>
+
+                    <tr>
+                        <td>0.35 lei / gram</td>
+                        <td>Ridicata</td>
+                        <td>Suporturi si accesorii tehnice</td>
+                    </tr>
+
+                    <tr>
+                        <td>TPU</td>
+                        <td>0.50 lei / gram</td>
+                        <td>Flexibil</td>
+                        <td>Piese elastice si protectii</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            Preturile sunt orientative si pot varia in functie de complexitatea modelului,
+                            materialul utilizat si timpul de printare.
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+            <section id="formula">
+                <h3>Calcul estimativ al costului unei printari 3D</h3>
+
+                <p>Costul unui obiect printat 3D poate fi estimat folosind formula:</p>
+
+                <math>
+
+                    <mrow>
+                        <mi>Cost</mi>
+                        <mo>=</mo>
+                        <mi>Greutate</mi>
+                        <mo>×</mo>
+                        <mi>Pret</mi>
+                        <mo>/</mo>
+                        <mi>gram</mi>
+                    </mrow>
+
+                </math>
+
+                <p>
+                    De exemplu, un obiect de 100g realizat din PLA poate costa aproximativ
+                    100 × 0.25 lei.
+                </p>
+
+            </section>
+            <section id="termeni-conditii">
+
+                <h3>Termeni si conditii pentru serviciul de personalizare 3D</h3>
+
+                <embed src="resurse/docs/termeni-personalizare-tipar3d.pdf" width="600" height="500"
+                    type="application/pdf">
+
+            </section>
+            <h3>Magazin 3D pentru toate proiectele tale</h3>
+
+            <p>
+                Magazinul nostru 3D este dedicat celor pasionati de
+                printare 3D si tehnologie moderna. Prin personalizare 3d
+                puteti transforma orice idee intr-un obiect 3d real.
+            </p>
+
+            <p>
+                Tipar3D combina tipar 3d de inalta precizie cu design
+                creativ pentru a livra produse printate 3d de calitate.
+            </p>
+
+        </section>
+
+        <section id="evenimente">
+
+            <h2>Evenimente Tipar3D</h2>
+
+            <ol>
+
+                <li>
+                    <time datetime="2026-03-15T14:00">15 martie 2026, ora 14:00</time>,
+                    <b>Workshop Printare 3D pentru incepatori</b> -
+                    Demonstratie practica de tipar 3d si personalizare 3d pentru studenti si pasionati.
+                </li>
+
+                <li>
+                    <time datetime="2026-04-10T12:30">10 aprilie 2026, ora 12:30</time>,
+                    <b>Lansare colectie Figurine 3D</b> -
+                    Prezentam o noua serie de figurine 3d si obiecte 3d decorative.
+                </li>
+
+                <li>
+                    <time datetime="2026-05-05T16:00">5 mai 2026, ora 16:00</time>,
+                    <b>Reduceri la Produse Printate 3D</b> -
+                    Oferim discount pentru toate produsele printate 3d si piesele 3d realizate la comanda.
+                </li>
+
+            </ol>
+
+        </section>
+
+        <section id="anunt-important">
+
+            <h2>Anunt important</h2>
+
+            <p>
+                <strong>ATENTIE! In perioada sarbatorilor comenzile de printare 3D pot avea intarzieri.</strong>
+            </p>
+
+            <p>
+                Pentru rezultate excelente trebuie sa puneti accentul pe
+                <em>calitate</em>, nu doar pe pret.
+            </p>
+
+            <p>
+                Oferim <b>printare 3D</b>, <b>produse printate 3D</b> si
+                <b>personalizare 3D</b> la standarde ridicate.
+            </p>
+
+        </section>
+
+        <section id="produse">
+
+            <h2>Produsele noastre 3D</h2>
+
+            <p>
+                Magazinul nostru 3D ofera produse printate 3D variate,
+                realizate prin printare 3D moderna si tipar 3d de precizie.
+            </p>
+
+            <section id="figurine">
+
+                <h3>Figurine 3D personalizate</h3>
+
+                <p>
+                    Realizam figurine 3D unice prin personalizare 3d,
+                    potrivite pentru cadouri sau colectii.
+                </p>
+
+            </section>
+
+            <section id="piese">
+
+                <h3>Piese 3D functionale</h3>
+
+                <p>
+                    Cream piese 3D tehnice si obiecte 3d functionale
+                    pentru proiecte scolare sau profesionale.
+                </p>
+
+                <section id="prototipuri">
+
+                    <h4>Prototipuri prin tipar 3D</h4>
+
+                    <p>
+                        Serviciile noastre de tipar 3d permit realizarea
+                        rapida a prototipurilor si produselor printate 3d.
+                    </p>
+
+                </section>
+
+            </section>
+            <section id="catalog">
+
+                <h2>Produse printate 3D populare</h2>
+
+                <p>Apasa pe un produs pentru a vedea pretul estimativ.</p>
+
+                <img src="resurse/imagini/catalog.png" usemap="#image-map" alt="Catalog produse printate 3D">
+
+                <map name="image-map">
+
+                <area alt="Breloc 3D"
+                title="Breloc personalizat 3D"
+                href="#breloc"
+                coords="0,0,355,398"
+                shape="rect">
+
+                <area alt="Figurina 3D"
+                title="Figurina printata 3D"
+                href="#figurina"
+                coords="381,0,693,399"
+                shape="rect">
+
+                <area alt="Suport telefon 3D"
+                title="Suport telefon printat 3D"
+                href="#suport"
+                coords="695,3,1053,399"
+                shape="rect">
+
+                </map>
+                <section id="figurina">
+                    <h3>Figurina 3D</h3>
+                    <p>Pret estimativ: 25 lei</p>
+                </section>
+
+                <section id="suport">
+                    <h3>Suport telefon printat 3D</h3>
+                    <p>Pret estimativ: 30 lei</p>
+                </section>
+
+                <section id="breloc">
+                    <h3>Breloc personalizat 3D</h3>
+                    <p>Pret estimativ: 15 lei</p>
+                </section>
+            </section>
+        </section>
+        <section id="intrebari">
+
+            <h2>Intrebari frecvente despre printare 3D</h2>
+
+            <details>
+                <summary>Cat dureaza realizarea unui obiect printat 3D?</summary>
+                <p>
+                    Timpul de printare depinde de dimensiunea modelului si de complexitatea acestuia.
+                    Un obiect mic poate dura intre 1 si 3 ore, iar unul mai complex poate dura chiar
+                    si peste 10 ore.
+                </p>
+            </details>
+
+            <details>
+                <summary>Ce materiale folositi pentru printare 3D?</summary>
+                <p>
+                    Folosim materiale precum PLA, PETG sau TPU, fiecare avand proprietati diferite
+                    in functie de tipul obiectului realizat.
+                </p>
+            </details>
+
+        </section>
+        <section id="statistici">
+
+            <h2>Statistici Tipar3D</h2>
+
+            <p>
+                Nivelul de satisfactie al clientilor:
+                <meter min="0" max="100" low="40" high="80" optimum="90" value="92">
+                    92%
+                </meter>
+            </p>
+
+            <p>
+                Gradul de ocupare al imprimantelor in aceasta perioada:
+                <meter min="0" max="100" low="30" high="70" optimum="50" value="85">
+                    85%
+                </meter>
+            </p>
+
+        </section>
+        <section id="beneficii">
+
+            <h2>De ce sa alegi Tipar3D pentru printare 3D?</h2>
+
+            <p>Alegand magazinul nostru 3D, beneficiati de:</p>
+
+            <ul>
+                <li>Servicii rapide de printare 3D</li>
+                <li>Produse printate 3d durabile</li>
+                <li>Figurine 3d personalizate</li>
+                <li>Piese 3d realizate cu precizie</li>
+                <li>Consultanta pentru personalizare 3d</li>
+            </ul>
+
+            <p>
+                Indiferent daca doriti obiecte 3d unice sau piese 3d
+                functionale, serviciile noastre de tipar 3d sunt
+                adaptate cerintelor dumneavoastra.
+            </p>
+
+        </section>
 
     </main>
+
+    <footer>
+
+        <p>
+            <a href="#">Inapoi la inceput</a>
+        </p>
+
+        <address>
+
+            Telefon:
+            <a href="tel:+40712345678">+40 712 345 678</a>
+
+            <br><br>
+
+            Adresa:
+            <a href="https://maps.google.com/?q=Facultatea+de+Matematica+si+Informatica+Bucuresti" target="_blank">
+                Strada Academiei 14, 010014 București
+            </a>
+            <br><br>
+            <iframe src="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica+Bucuresti&output=embed"
+                width="400" height="300" style="border:0;" allowfullscreen="">
+            </iframe>
+            <br><br>
+
+            Email:
+            <a href="mailto:contact@tipar3d.ro">
+                contact@tipar3d.ro
+            </a>
+
+            <br><br>
+
+            WhatsApp:
+            <a href="https://wa.me/40712345678" target="_blank">
+                Trimite mesaj pe WhatsApp
+            </a>
+
+        </address>
+
+        <p>
+            <small>
+                &copy; Tipar3D - Stemate Cătălin,
+                creat la data de
+                <time datetime="2026-03-01">1 martie 2026</time>
+            </small>
+        </p>
+
+    </footer>
+
 </body>
 
 </html>
