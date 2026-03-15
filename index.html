@@ -19,18 +19,24 @@
 
     <title>Tipar3D - Magazin produse printate 3D</title>
     <link rel="stylesheet" href="resurse/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 
 <body>
 
     <header>
-        <h1>Tipar3D</h1>
+        <h1 id="logo-text">Tipar3D</h1>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Acasa</a>
-                    <ul>
+        <nav id="navbar-container">
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a href="index.html"> <i class="fa-solid fa-house"></i> Acasa</a>
+                    <ul class="navbar-submenu">
                         <li><a href="#bun_venit">Bine ati venit</a></li>
                         <li><a href="#despre">Despre noi</a></li>
                         <li><a href="#servicii">Servicii</a></li>
@@ -38,15 +44,19 @@
                         <li><a href="#beneficii">Beneficii</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Inregistrare</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="navbar-item"><a href="#"><i class="fa-sharp fa-solid fa-users fa-beat-fade"
+                            style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"></i>
+                        Inregistrare</a></li>
+                <li class="navbar-item"><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <main class="grid-container">
-        <div class ="zona1">
+    <main>
+    <div class="grid-container">
+        <div class="zona1">
+            <div id="text-zona1">
             <section id="bun_venit">
                 <hgroup>
                     <h2>Magazin 3D specializat in printare 3D</h2>
@@ -76,29 +86,6 @@
                     pentru realizarea de produse printate 3d personalizate.
                 </p>
 
-                <figure>
-
-                    <a href="resurse/imagini/imprimanta_mare.png">
-
-                        <picture>
-
-                            <source srcset="resurse/imagini/imprimanta-200x200.png" media="(max-width: 600px)">
-
-                            <source srcset="resurse/imagini/imprimanta-700x700.png" media="(max-width: 1000px)">
-
-                            <img src="resurse/imagini/imprimanta-1200x1000.png" style= "width:1000px" alt="Imprimanta 3D Bambu Lab P1S"
-                                title="Imprimanta 3D utilizata pentru realizarea produselor printate 3D">
-
-                        </picture>
-
-                    </a>
-
-                    <figcaption>
-                        Imprimanta utilizata pentru <b>printare 3D</b>.
-                    </figcaption>
-
-                </figure>
-
                 <p>
                     Prin personalizare 3d si tehnologie moderna, realizam obiecte 3d
                     unice si piese 3d adaptate cerintelor clientilor nostri.
@@ -115,6 +102,7 @@
                         Wikipedia
                     </a>.
                 </p>
+
 
             </section>
 
@@ -134,71 +122,108 @@
                     <dd>Adaptarea unui model 3D in functie de cerintele clientului.</dd>
 
                 </dl>
-
             </section>
+                </div>
+                            <div id="imagine-zona1">
+                    <figure>
+
+                        <a href="resurse/imagini/imprimanta_mare.png">
+
+                            <picture>
+
+                                <source srcset="resurse/imagini/imprimanta-200x200.png" media="(max-width: 600px)">
+
+                                <source srcset="resurse/imagini/imprimanta-700x700.png" media="(max-width: 1000px)">
+
+                                <img src="resurse/imagini/imprimanta-1200x1000.png" alt="Imprimanta 3D Bambu Lab P1S"
+                                    title="Imprimanta 3D utilizata pentru realizarea produselor printate 3D">
+
+                            </picture>
+
+                        </a>
+
+                        <figcaption>
+                            Imprimanta utilizata pentru <b>printare 3D</b>.
+                        </figcaption>
+
+                    </figure>
+                </div>
         </div>
         <div class="zona2">
             <section id="tabel_costuri">
-                                <table>
 
-                    <caption>Materiale utilizate pentru printare 3D si pret estimativ</caption>
+                <div id="container-tabel-costuri">
 
-                    <thead>
-                        <tr>
-                            <th>Material</th>
-                            <th>Pret (lei / gram)</th>
-                            <th>Rezistenta</th>
-                            <th>Utilizare recomandata</th>
-                        </tr>
-                    </thead>
+                    <table>
 
-                    <tbody>
+                        <caption>Materiale utilizate pentru printare 3D si pret estimativ</caption>
 
-                        <tr>
-                            <td rowspan="2">PLA</td>
-                            <td>0.25 lei / gram</td>
-                            <td>Medie</td>
-                            <td>Figurine decorative</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Pret (lei / gram)</th>
+                                <th>Rezistenta</th>
+                                <th>Utilizare recomandata</th>
+                            </tr>
+                        </thead>
 
-                        <tr>
-                            <td>0.25 lei / gram</td>
-                            <td>Medie</td>
-                            <td>Prototipuri si obiecte usoare</td>
-                        </tr>
+                        <tbody class="grup-material">
+                            <tr>
+                                <td rowspan="2">PLA</td>
+                                <td rowspan="2">0.25 lei / gram</td>
+                                <td rowspan="2">Medie</td>
+                                <td>Figurine decorative</td>
+                            </tr>
+                            <tr>
+                                <td>Prototipuri si obiecte usoare</td>
+                            </tr>
+                        </tbody>
 
-                        <tr>
-                            <td rowspan="2">PETG</td>
-                            <td>0.35 lei / gram</td>
-                            <td>Ridicata</td>
-                            <td>Piese functionale</td>
-                        </tr>
+                        <tbody class="grup-material">
+                            <tr>
+                                <td rowspan="2">PETG</td>
+                                <td rowspan="2">0.35 lei / gram</td>
+                                <td rowspan="2">Ridicata</td>
+                                <td>Piese functionale</td>
+                            </tr>
+                            <tr>
+                                <td>Suporturi si accesorii tehnice</td>
+                            </tr>
+                        </tbody>
 
-                        <tr>
-                            <td>0.35 lei / gram</td>
-                            <td>Ridicata</td>
-                            <td>Suporturi si accesorii tehnice</td>
-                        </tr>
+                        <tbody class="grup-material">
+                            <tr>
+                                <td rowspan="2">ABS</td>
+                                <td rowspan="2">0.40 lei / gram</td>
+                                <td rowspan="2">Ridicata</td>
+                                <td>Piese rezistente la temperatura</td>
+                            </tr>
+                            <tr>
+                                <td>Carcase si componente mecanice</td>
+                            </tr>
+                        </tbody>
 
-                        <tr>
-                            <td>TPU</td>
-                            <td>0.50 lei / gram</td>
-                            <td>Flexibil</td>
-                            <td>Piese elastice si protectii</td>
-                        </tr>
+                        <tbody class="grup-material">
+                            <tr>
+                                <td>TPU</td>
+                                <td>0.50 lei / gram</td>
+                                <td>Flexibil</td>
+                                <td>Piese elastice si protectii</td>
+                            </tr>
+                        </tbody>
 
-                    </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    Preturile sunt orientative si pot varia in functie de complexitatea modelului,
+                                    materialul utilizat si timpul de printare.
+                                </td>
+                            </tr>
+                        </tfoot>
 
-                    <tfoot>
-                        <tr>
-                            <td colspan="4">
-                                Preturile sunt orientative si pot varia in functie de complexitatea modelului,
-                                materialul utilizat si timpul de printare.
-                            </td>
-                        </tr>
-                    </tfoot>
+                    </table>
 
-                </table>
+                </div>
             </section>
         </div>
         <div class="zona3">
@@ -255,9 +280,9 @@
 
             <section id="utilizatori-online">
 
-            <h2>Utilizatori online</h2>
+                <h2>Utilizatori online</h2>
 
-            <p>Momentan sunt 12 utilizatori conectati.</p>
+                <p>Momentan sunt 12 utilizatori conectati.</p>
 
             </section>
 
@@ -307,19 +332,19 @@
 
             <section id="server-info">
 
-            <h2>Informatii despre site</h2>
+                <h2>Informatii despre site</h2>
 
                 <ul>
-                <li>Versiune site: 1.0</li>
-                <li>Server uptime: 99.9%</li>
-                <li>Ultima actualizare: 2026</li>
+                    <li>Versiune site: 1.0</li>
+                    <li>Server uptime: 99.9%</li>
+                    <li>Ultima actualizare: 2026</li>
                 </ul>
 
             </section>
 
         </div>
         <div class="zona8">
-                      <section id="servicii">
+            <section id="servicii">
 
                 <h2>Servicii de tipar 3D si personalizare 3D</h2>
 
@@ -332,25 +357,21 @@
                 </p>
                 <div id="video-container">
                     <div id="meniu-video-container">
-                        <a id="buton-video-container" href="https://www.youtube.com/embed/7lKpzGtoQX0" target="video3d">
-                        Tutorial modelare 3D
+                        <a class="buton-video-container" href="https://www.youtube.com/embed/7lKpzGtoQX0" target="video3d">
+                            Tutorial modelare 3D
                         </a>
-                        <a id="buton-video-container" href="https://www.youtube.com/embed/D5vtTydrjdY?si=5OAxIbAQgSw3puuh" target="video3d">
-                        Cum functioneaza imprimanta 3D
+                        <a class="buton-video-container"
+                            href="https://www.youtube.com/embed/D5vtTydrjdY?si=5OAxIbAQgSw3puuh" target="video3d">
+                            Cum functioneaza imprimanta 3D
                         </a>
-                        <a id="buton-video-container" href="https://www.youtube.com/embed/Ha_xrFHyuUY?si=RTluyWkanpf18caJ" target="video3d">
-                        Cum sa alegi filamentul pentru imprimare 3D
+                        <a class="buton-video-container"
+                            href="https://www.youtube.com/embed/Ha_xrFHyuUY?si=RTluyWkanpf18caJ" target="video3d">
+                            Cum sa alegi filamentul pentru imprimare 3D
                         </a>
                     </div>
                     <div id="iframe-video-container">
-                        <iframe
-                        width="512"
-                        height="512"
-                        src="https://www.youtube.com/embed/7lKpzGtoQX0"
-                        name="video3d"
-                        title="Tutorial modelare 3D"
-                        style="border:0;"
-                        allowfullscreen>
+                        <iframe width="512" height="512" src="https://www.youtube.com/embed/7lKpzGtoQX0" name="video3d"
+                            title="Tutorial modelare 3D" style="border:0;" allowfullscreen>
                         </iframe>
                     </div>
                 </div>
@@ -371,10 +392,9 @@
                         dupa finalul ultimului videoclip.
                     </p>
 
-                    <iframe width="560" height="315"
+                    <iframe
                         src="https://www.youtube.com/embed/videoseries?list=PLGqRUdq5ULsONnjEEPeBxxStEsobDKAtV&autoplay=1&loop=1&controls=1&playlist=PLGqRUdq5ULsONnjEEPeBxxStEsobDKAtV"
-                        title="Playlist tutoriale printare 3D" style="border:0;" allow="autoplay; encrypted-media"
-                        allowfullscreen>
+                        title="Playlist tutoriale printare 3D" allow="autoplay; encrypted-media" allowfullscreen>
                     </iframe>
                 </section>
                 <section id="formula">
@@ -403,14 +423,14 @@
 
                 </section>
                 <section id="termeni-conditii">
-                <h3>Termeni si conditii pentru serviciul de personalizare 3D</h3>
-                <details>
+                    <h3>Termeni si conditii pentru serviciul de personalizare 3D</h3>
+                    <details>
 
-                   <summary>Click aici!</summary>
-                    <embed src="resurse/docs/termeni-personalizare-tipar3d.pdf" width="600" height="500"
-                        type="application/pdf">
+                        <summary>Click aici!</summary>
+                        <embed src="resurse/docs/termeni-personalizare-tipar3d.pdf" width="600" height="500"
+                            type="application/pdf">
 
-                </details>
+                    </details>
                 </section>
                 <h3>Magazin 3D pentru toate proiectele tale</h3>
 
@@ -473,27 +493,18 @@
 
                     <p>Apasa pe un produs pentru a vedea pretul estimativ.</p>
 
-                    <img src="resurse/imagini/catalog.png" usemap="#image-map" alt="Catalog produse printate 3D">
+                    <img id="catalog-imagini" src="resurse/imagini/catalog.png" usemap="#image-map" alt="Catalog produse printate 3D">
 
                     <map name="image-map">
 
-                    <area alt="Breloc 3D"
-                    title="Breloc personalizat 3D"
-                    href="#breloc"
-                    coords="0,0,355,398"
-                    shape="rect">
+                        <area alt="Breloc 3D" title="Breloc personalizat 3D" href="#breloc" coords="0,0,355,398"
+                            shape="rect">
 
-                    <area alt="Figurina 3D"
-                    title="Figurina printata 3D"
-                    href="#figurina"
-                    coords="381,0,693,399"
-                    shape="rect">
+                        <area alt="Figurina 3D" title="Figurina printata 3D" href="#figurina" coords="381,0,693,399"
+                            shape="rect">
 
-                    <area alt="Suport telefon 3D"
-                    title="Suport telefon printat 3D"
-                    href="#suport"
-                    coords="695,3,1053,399"
-                    shape="rect">
+                        <area alt="Suport telefon 3D" title="Suport telefon printat 3D" href="#suport"
+                            coords="695,3,1053,399" shape="rect">
 
                     </map>
                     <section id="figurina">
@@ -533,15 +544,16 @@
                     </p>
                 </details>
 
-        </section>
+            </section>
+        </div>
         </div>
     </main>
 
     <footer>
+        <a href="#" id="link-top" title="Mergi sus">
+            <div id="triunghi"></div>
+        </a>
 
-        <p>
-            <a href="#">Inapoi la inceput</a>
-        </p>
 
         <address>
 
@@ -555,7 +567,7 @@
                 Strada Academiei 14, 010014 București
             </a>
             <br><br>
-            <iframe src="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica+Bucuresti&output=embed"
+            <iframe id="harta" src="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica+Bucuresti&output=embed"
                 width="400" height="300" style="border:0;" allowfullscreen="">
             </iframe>
             <br><br>
