@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @media print {
-  /* 1. Banner - Doar pe prima pagina, vizibil doar la print */
   #proiect-scolar {
     display: block !important;
     position: absolute;
@@ -14,32 +13,28 @@
     z-index: 10002;
     background: white !important;
   }
-  /* 2. Ascundere elemente media si containere */
   img, video, iframe, embed, object, figure, figcaption,
   #video-container, #playlist-video, #imagine-zona1,
   #link-top, .burger, #navbar-container,
   #meniu-video-container, #iframe-video-container, .buton-video-container {
     display: none !important;
   }
-  /* 3. Grid devine block si alb */
   .grid-container, main {
     display: block !important;
     background: white !important;
   }
-  /* 4. Link-uri text normal */
   a {
     color: black !important;
     text-decoration: none !important;
   }
-  /* 5. Prima Pagina - Centrare titlu si ACOPERIRE watermark */
   header {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 98vh; /* Ocupa toata pagina */
+    height: 98vh;
     page-break-after: always;
-    background: white !important; /* Acopera watermark-ul fixat */
+    background: white !important;
     position: relative;
     z-index: 10001;
     border: none !important;
@@ -56,7 +51,6 @@
     page-break-before: always;
     background: white !important;
   }
-  /* 8. Watermark - Conform cerintelor */
   body::after {
     content: "STEMATE CATALIN";
     position: fixed;
@@ -80,7 +74,6 @@
     text-align: center;
     overflow: hidden;
   }
-  /* 9. Margini alternate */
   @page {
     size: auto;
     margin: 0;

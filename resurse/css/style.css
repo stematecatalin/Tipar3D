@@ -449,7 +449,7 @@ address iframe {
 
 @media (max-width:1000px){
 
-*{
+*:not(.burger, .burger span){
 animation:none !important;
 transition:none !important;
 }
