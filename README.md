@@ -93,3 +93,97 @@ tagurile <map>,  <area>
 ✅Bonus (0.05) Adăugați pentru adresa facultății (de la un subpunct anterior) și un iframe cu locația marcată pe google maps.
 
 ✅Bonus (0.05) Crearea unui iframe în care se afișează pe rând (în mod automat) videoclipurile dintr-un playlist de pe youtube (playlist-ul va avea minim 2 videoclipuri), cu butoanele de controlare a videoclipurilor afișate. Playlist-ul se va relua automat de la început după redarea ultimului videoclip. Cerința se va rezolva doar din parametri în cadrul linkului youtube. Documentație: https://developers.google.com/youtube/player_parameters
+
+
+# Cerințe proiect
+
+## (0.025) Task schema cromatica:
+(cerință individuală)✅
+
+---
+
+## (0.15) Task layout:
+(cerință individuală)✅
+
+---
+
+## (0.25) Task design rudimentar:
+
+Folosind variabile css, să se adauge o spațiere în stânga și dreapta paginii, comprimând un pic conținutul, dar aerisind pagina. Spațierea trebuie să fie identică în cele două direcții. Spațierea va fi mai mică pe ecran mediu și de valoare minimă pe ecran mic.✅
+
+Folosiți gap pentru a realiza o spațiere între celulele gridului paginii. Spațierea trebuie să descrească pe ecran mediu și mic.✅
+
+Izolați vizual zonele paginii: header, footer, și zonele gridului folosind minim 3 dintre următoarele efecte css: background de culoare (aleasă din schema cromatică) diferită pe zone diferite, border, colțuri rotunjite ale box-ului, box-shadow.✅
+
+Folosiți padding pentru a distanța textul din zone de granițele zonelor. Padding-ul ar trebui să fie egal pentru toate zonele de text. Folosiți variabile CSS în cazul în care nu puteți asigura acest lucru prin simplii selectori.
+
+Elementele media (imagini, videoclipuri etc.) care vin cu o lățime presetată vor primi lățimea în procentaje, setând, totuși, o lățime maximă si minimă pentru ele, pentru a nu avea efecte vizuale nedorite. Aceste valori pot să difere în funcție de dimensiunea ecranului.
+
+---
+
+## (0.05) Task iconuri și font extern
+
+Folosiți in prima pagină a site-ului un font extern prin Google API.✅
+
+Folosiți în pagină, într-un loc relevant un icon static și unul animat (diferite de iconurile cerute în eventuale alte taskuri) din colecția Font Awesome (fie folosind kit - recomandat - fie folosind linkul CDN ca in exemplu:✅
+
+https://replit.com/@IrinaCiocan/curs4-exemple#fontawesome.html)
+
+---
+
+## (0.05) Stilizare tabel:
+(cerință individuală)
+
+### Indicații de rezolvare:
+
+1. Pentru taskul cu valori alternate folosiți pseudoclasele `:nth-child(odd)`, `:nth-child(even)` cu elementele cerute (td pentru celule(coloane) și tr pentru rânduri)
+
+2. Proprietățile de care aveți nevoie sunt în special la **CSS Styling Tables (w3schools.com)**
+
+3. Bara de scroll se poate realiza cu ajutorul proprietății **overflow**
+
+---
+
+## (0.05) Task stilizare-taburi:
+(cerință individuală)
+
+### Indicatii de rezolvare:
+
+1. Creati un container în care puneti linkurile care se deschid in iframe (cel care are clasa "taburi-iframe" in exemplul de mai jos). De asemenea grupați containerul linkuri și iframe-ul într-un alt container (cel cu clasa container-iframe din exemplul de mai jos)
+
+2. Stilizati tagurile `<a>` sub forma de butoane (width si height setat, background, border)
+
+3. Aplicati `display:flex` pe containerul care trebuie sa contina coloane (fie container-iframe, fie taburi-iframe in functie de cerinta)
+
+---
+
+## (0.05) Link top:
+(cerință individuală)
+
+### Indicatie de rezolvare:
+
+Porniti de la exemplul: **exemplu_layout-1 - Replit**  
+Cautati in html elementul cu id-ul **"link-top"**, si fiul lui care e un div cu id-ul **"triunghi"**.  
+
+Preluati codul css pentru ele si il modificati pentru a obtine rezolvarea la acest task.
+
+---
+
+# Bonusuri
+
+## (0.05 - 0.15 in functie de complexitate)
+
+Resetarea css-ului cu redefinirea spațierilor, dimensiunilor, culorilor, stilurilor bol si italic, eventual a bulleturilor și indicilor de listă, a stilului tabelelor).
+
+In afară de body și html care vor primi dimensiuni în unități fixe, toate celelalte elemente vor folosi unități relative.
+
+Se vor folosi variabile pentru valori care se repetă și depind logic unele de altele.
+
+Puteti folosi de exemplu:  
+https://meyerweb.com/eric/tools/css/reset/
+
+---
+
+## (0.05 - 0.1 in functie de complexitate)
+
+Stilizarea unei formule scrise în MathML: părți diferite din formulă trebuie să aibă stil diferit, de exemplu schimbarea culorii, a dimensiunii de font, italicizarea sau îngroșarea caracterelor etc.

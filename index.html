@@ -25,14 +25,17 @@
         href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="resurse/css/nav.css">
 </head>
 
 <body>
-
+    <p id="proiect-scolar">Acesta este un proiect școlar!</p>
     <header>
         <h1 id="logo-text">Tipar3D</h1>
-
         <nav id="navbar-container">
+                    <div class="burger">
+        <i class="fa-solid fa-bars"></i>
+        </div>
             <ul class="navbar">
                 <li class="navbar-item">
                     <a href="index.html"> <i class="fa-solid fa-house"></i> Acasa</a>
@@ -575,6 +578,17 @@ materialul utilizat si timpul de printare.
 
     </footer>
 
+    <script>
+        window.onload = function() {
+            var burger = document.querySelector('.burger');
+            var navbar = document.querySelector('.navbar');
+            if(burger && navbar) {
+                burger.onclick = function() {
+                    navbar.classList.toggle('open');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

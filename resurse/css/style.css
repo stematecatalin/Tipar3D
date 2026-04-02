@@ -123,57 +123,6 @@ header {
 
 
 }
-
-/*NAVIGATION*/
-.navbar {
-    display: flex;
-
-    justify-content: center;
-    margin: 0;
-    gap: 20px;
-    padding: 0;
-}
-
-.navbar li {
-    list-style: none;
-    width: var(--navbar-button-width);
-    height: var(--navbar-button-height);
-    background: var(--ui);
-    transition: linear 0.25s ease;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.navbar li:hover {
-    background: #5cb5fa;
-    cursor: pointer;
-    position: relative;
-
-
-}
-
-.navbar-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-decoration: none;
-    color: white;
-
-    width: 100%;
-    height: 100%;
-}
-
-.navbar-item:hover .navbar-submenu {
-    display: block
-}
-
-.navbar-submenu {
-    display: none;
-    z-index: 10;
-    position: absolute;
-}
-
-/*-------------------------------------------------------------*/
 footer {
     background-color: var(--primary);
 }

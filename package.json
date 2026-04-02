@@ -1,0 +1,44 @@
+{
+  "name": "tipar3d",
+  "version": "1.0.0",
+  "description": "site despre produse imprimate 3d",
+  "keywords": [
+    "printare",
+    "3D",
+    "tipar",
+    "3d",
+    "produse",
+    "printate",
+    "3d",
+    "obiecte",
+    "3d",
+    "figurine",
+    "3d",
+    "piese",
+    "3d",
+    "personalizare",
+    "3d",
+    "magazin",
+    "3d"
+  ],
+  "homepage": "https://github.com/stematecatalin/Tipar3D#readme",
+  "bugs": {
+    "url": "https://github.com/stematecatalin/Tipar3D/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stematecatalin/Tipar3D.git"
+  },
+  "license": "ISC",
+  "author": "Stemate Catalin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "sass": "^1.98.0"
+  }
+}
