@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @media print {
+  /* 1. Banner - Doar pe prima pagina, vizibil doar la print */
   #proiect-scolar {
     display: block !important;
     position: absolute;
@@ -57,22 +57,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    width: 100px;
-    height: 2cm;
-    opacity: 0.65;
-    color: black !important;
-    font-size: 14px !important;
+    width: 400px;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.1) !important;
+    font-size: 30px !important;
     font-weight: bold;
     text-transform: uppercase;
-    border: 4px double black !important;
-    padding: 5px;
+    border: 4px double rgba(0, 0, 0, 0.1) !important;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     pointer-events: none;
     z-index: 10000;
     text-align: center;
-    overflow: hidden;
   }
   @page {
     size: auto;

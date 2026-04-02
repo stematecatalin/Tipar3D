@@ -14,7 +14,6 @@
     background: white !important;
   }
 
-  /* 2. Ascundere elemente media si containere */
   img, video, iframe, embed, object, figure, figcaption, 
   #video-container, #playlist-video, #imagine-zona1, 
   #link-top, .burger, #navbar-container,
@@ -22,27 +21,24 @@
     display: none !important;
   }
 
-  /* 3. Grid devine block si alb */
   .grid-container, main {
     display: block !important;
     background: white !important;
   }
 
-  /* 4. Link-uri text normal */
   a {
     color: black !important;
     text-decoration: none !important;
   }
 
-  /* 5. Prima Pagina - Centrare titlu si ACOPERIRE watermark */
   header {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 98vh; /* Ocupa toata pagina */
+    height: 98vh; 
     page-break-after: always;
-    background: white !important; /* Acopera watermark-ul fixat */
+    background: white !important; 
     position: relative;
     z-index: 10001;
     border: none !important;
@@ -62,7 +58,6 @@
     background: white !important;
   }
 
-  /* 8. Watermark - Micşorat si discret */
   body::after {
     content: "STEMATE CATALIN";
     position: fixed;
@@ -70,11 +65,11 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     
-    width: 400px; /* Mai mic */
+    width: 400px;
     white-space: nowrap;
     
     color: rgba(0, 0, 0, 0.1) !important;
-    font-size: 30px !important; /* Mult mai mic */
+    font-size: 30px !important;
     font-weight: bold;
     text-transform: uppercase;
     
@@ -85,11 +80,10 @@
     align-items: center;
     justify-content: center;
     pointer-events: none;
-    z-index: 10000; /* Sub header-ul alb de pe pagina 1 */
+    z-index: 10000; 
     text-align: center;
   }
 
-  /* 9. Margini alternate */
   @page {
     size: auto;
     margin: 0;
