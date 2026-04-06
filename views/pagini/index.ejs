@@ -1,63 +1,6 @@
-<!DOCTYPE html>
-<html lang="ro">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="author" content="Stemate Catalin">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Tipar3D este un magazin online care ofera produse printate 3D, obiecte personalizate, figurine, accesorii si piese functionale, cu posibilitatea de comanda online.">
-    <meta name="keywords"
-        content="printare 3D, tipar 3d, produse printate 3d, obiecte 3d, figurine 3d, piese 3d, personalizare 3d, magazin 3d">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="icon" type="image/png" href="resurse/ico/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="resurse/ico/favicon.svg" />
-    <link rel="shortcut icon" href="resurse/ico/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="resurse/ico/apple-touch-icon.png" />
-    <link rel="manifest" href="resurse/ico/site.webmanifest" />
-
-    <title>Tipar3D - Magazin produse printate 3D</title>
-    <link rel="stylesheet" href="resurse/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="resurse/css/nav.css">
-</head>
-
+<%- include('../fragmente/head') %>
 <body>
-    <p id="proiect-scolar">Acesta este un proiect școlar!</p>
-    <header>
-        <h1 id="logo-text">Tipar3D</h1>
-        <nav id="navbar-container">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-            <ul class="navbar">
-                <li class="navbar-item">
-                    <a href="index.html"> <i class="fa-solid fa-house"></i> Acasa</a>
-                    <ul class="navbar-submenu">
-                        <li><a href="#bun_venit">Bine ati venit</a></li>
-                        <li><a href="#despre">Despre noi</a></li>
-                        <li><a href="#servicii">Servicii</a></li>
-                        <li><a href="#produse">Produse</a></li>
-                        <li><a href="#beneficii">Beneficii</a></li>
-                    </ul>
-                </li>
-                <li class="navbar-item"><a href="#"><i class="fa-sharp fa-solid fa-users fa-beat-fade"
-                            style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"></i>
-                        Inregistrare</a></li>
-                <li class="navbar-item"><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
+    <%- include('../fragmente/header') %>
     <main>
     <div class="grid-container">
         <div class="zona1">
@@ -69,100 +12,50 @@
                         Produse printate 3D personalizate prin tehnologie moderna
                     </p>
                 </hgroup>
-
                 <p>
                     Tipar3D este un <b>magazin 3D</b> specializat in
                     <b>printare 3D</b> si <b>tipar 3d</b> pentru clienti
                     care doresc <b>produse printate 3d</b> personalizate.
                 </p>
-
                 <p>
                     Folosim tehnologie moderna de printare 3D pentru a crea
                     <b>obiecte 3d</b>, <b>figurine 3d</b> si <b>piese 3d</b>
                     functionale, adaptate nevoilor fiecarui client.
                 </p>
             </section>
-
-            <section id="despre">
-
-                <h2>Despre serviciile noastre de printare 3D</h2>
-                <p>
-                    Tipar3D este un magazin 3D specializat in printare 3D si tipar 3d
-                    pentru realizarea de produse printate 3d personalizate.
-                </p>
-
-                <p>
-                    Prin personalizare 3d si tehnologie moderna, realizam obiecte 3d
-                    unice si piese 3d adaptate cerintelor clientilor nostri.
-                </p>
-                <p>
-                    Un exemplu de utilizare a tehnologiei poate fi gasit aici:
-                    <a href="https://en.wikipedia.org/wiki/3D_printing#Applications" target="_blank">
-                        https://en.wikipedia.org/<wbr>wiki/3D_printing#Applications
-                    </a>
-                </p>
-                <p>
-                    Afla mai multe despre tehnologia moderna de printare 3D pe
-                    <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
-                        Wikipedia
-                    </a>.
-                </p>
-
-
-            </section>
-
             <section id="termeni">
-
                 <h2>Termeni folositi in printare 3D</h2>
-
                 <dl>
-
                     <dt>Printare 3D</dt>
                     <dd>Proces de creare a unui obiect tridimensional prin depunerea succesiva de material.</dd>
-
                     <dt>Tipar 3D</dt>
                     <dd>Tehnologie moderna utilizata pentru realizarea produselor printate 3D.</dd>
-
                     <dt>Personalizare 3D</dt>
                     <dd>Adaptarea unui model 3D in functie de cerintele clientului.</dd>
-
                 </dl>
             </section>
             </div>
                             <div id="imagine-zona1">
                     <figure>
-
-                        <a href="resurse/imagini/imprimanta_mare.png">
-
+                        <a href="/resurse/imagini/imprimanta_mare.png">
                             <picture>
-
-                                <source srcset="resurse/imagini/imprimanta-200x200.png" media="(max-width: 600px)">
-
-                                <source srcset="resurse/imagini/imprimanta-700x700.png" media="(max-width: 1000px)">
-
-                                <img src="resurse/imagini/imprimanta-1200x1000.png" alt="Imprimanta 3D Bambu Lab P1S"
+                                <source srcset="/resurse/imagini/imprimanta-200x200.png" media="(max-width: 600px)">
+                                <source srcset="/resurse/imagini/imprimanta-700x700.png" media="(max-width: 1000px)">
+                                <img src="/resurse/imagini/imprimanta-1200x1000.png" alt="Imprimanta 3D Bambu Lab P1S"
                                     title="Imprimanta 3D utilizata pentru realizarea produselor printate 3D">
-
                             </picture>
-
                         </a>
-
                         <figcaption>
                             Imprimanta utilizata pentru <b>printare 3D</b>.
                         </figcaption>
-
                     </figure>
                 </div>
         </div>
         <div class="zona2">
  <section id="tabel_costuri">
-
 <div id="container-tabel-costuri">
-
 <table>
-
 <caption>Materiale utilizate pentru printare 3D si pret estimativ</caption>
-
 <thead>
 <tr>
 <th>Material</th>
@@ -171,31 +64,25 @@
 <th>Utilizare recomandata</th>
 </tr>
 </thead>
-
 <tbody>
-
 <tr>
 <td>PLA</td>
 <td>0.25 lei / gram</td>
 <td>Medie</td>
 <td>Figurine decorative, prototipuri si obiecte usoare</td>
 </tr>
-
 <tr>
 <td>PETG</td>
 <td>0.35 lei / gram</td>
 <td>Ridicata</td>
 <td>Piese functionale, suporturi si accesorii tehnice</td>
 </tr>
-
 <tr>
 <td>TPU</td>
 <td>0.50 lei / gram</td>
 <td colspan="2">Flexibil – piese elastice si protectii</td>
 </tr>
-
 </tbody>
-
 <tfoot>
 <tr>
 <td colspan="4">
@@ -204,85 +91,65 @@ materialul utilizat si timpul de printare.
 </td>
 </tr>
 </tfoot>
-
 </table>
-
 </div>
 </section>
         </div>
         <div class="zona3">
             <section id="evenimente">
-
                 <h2>Evenimente Tipar3D</h2>
-
                 <ol>
-
                     <li>
                         <time datetime="2026-03-15T14:00">15 martie 2026, ora 14:00</time>,
                         <b>Workshop Printare 3D pentru incepatori</b> -
                         Demonstratie practica de tipar 3d si personalizare 3d pentru studenti si pasionati.
                     </li>
-
                     <li>
                         <time datetime="2026-04-10T12:30">10 aprilie 2026, ora 12:30</time>,
                         <b>Lansare colectie Figurine 3D</b> -
                         Prezentam o noua serie de figurine 3d si obiecte 3d decorative.
                     </li>
-
                     <li>
                         <time datetime="2026-05-05T16:00">5 mai 2026, ora 16:00</time>,
                         <b>Reduceri la Produse Printate 3D</b> -
                         Oferim discount pentru toate produsele printate 3d si piesele 3d realizate la comanda.
                     </li>
-
                 </ol>
-
             </section>
         </div>
         <div class="zona4">
             <section id="anunt-important">
-
                 <h2>Anunt important</h2>
-
                 <p>
                     <strong>ATENTIE! In perioada sarbatorilor comenzile de printare 3D pot avea intarzieri.</strong>
                 </p>
-
                 <p>
                     Pentru rezultate excelente trebuie sa puneti accentul pe
                     <em>calitate</em>, nu doar pe pret.
                 </p>
-
                 <p>
                     Oferim <b>printare 3D</b>, <b>produse printate 3D</b> si
                     <b>personalizare 3D</b> la standarde ridicate.
                 </p>
-
             </section>
         </div>
         <div class="zona5">
-
             <section id="utilizatori-online">
-
                 <h2>Utilizatori online</h2>
-
                 <p>Momentan sunt 12 utilizatori conectati.</p>
-
+                <h2>Ip utilizator: <%- locals.ip %></h2>
             </section>
-
+            
         </div>
         <div class="zona6">
             <section id="statistici">
-
                 <h2>Statistici Tipar3D</h2>
-
                 <p>
                     Nivelul de satisfactie al clientilor:
                     <meter min="0" max="100" low="40" high="80" optimum="90" value="92">
                         92%
                     </meter>
                 </p>
-
                 <p>
                     Gradul de ocupare al imprimantelor in aceasta perioada:
                     <meter min="0" max="100" low="30" high="70" optimum="50" value="25">
@@ -291,11 +158,8 @@ materialul utilizat si timpul de printare.
                 </p>
             </section>
             <section id="beneficii">
-
                 <h2>De ce sa alegi Tipar3D pentru printare 3D?</h2>
-
                 <p>Alegand magazinul nostru 3D, beneficiati de:</p>
-
                 <ul>
                     <li>Servicii rapide de printare 3D</li>
                     <li>Produse printate 3d durabile</li>
@@ -303,37 +167,27 @@ materialul utilizat si timpul de printare.
                     <li>Piese 3d realizate cu precizie</li>
                     <li>Consultanta pentru personalizare 3d</li>
                 </ul>
-
                 <p>
                     Indiferent daca doriti obiecte 3d unice sau piese 3d
                     functionale, serviciile noastre de tipar 3d sunt
                     adaptate cerintelor dumneavoastra.
                 </p>
-
             </section>
         </div>
         <div class="zona7">
-
             <section id="server-info">
-
                 <h2>Informatii despre site</h2>
-
                 <ul>
                     <li>Versiune site: 1.0</li>
                     <li>Server uptime: 99.9%</li>
                     <li>Ultima actualizare: 2026</li>
                 </ul>
-
             </section>
-
         </div>
         <div class="zona8">
             <section id="servicii">
-
                 <h2>Servicii de tipar 3D si personalizare 3D</h2>
-
                 <h3>Produse printate 3D la comanda</h3>
-
                 <p>
                     Oferim produse printate 3d realizate la comanda,
                     inclusiv figurine 3d tematice, obiecte 3d decorative
@@ -361,21 +215,27 @@ materialul utilizat si timpul de printare.
                 </div>
                 <p>
                     Puteti descarca un exemplu de model 3D:
-                    <a href="resurse/downloads/model3d.3mf" download="model3d.stl">
+                    <a href="/resurse/downloads/model3d.3mf" download="model3d.stl">
                         Descarca model 3D
                     </a>
                 </p>
-
+                <section id="video-prezentare">
+                    <h2>Prezentare video Tipar3D</h2>
+                    <video controls poster="/resurse/imagini/imprimanta-700x700.png" preload="metadata">
+                        <source src="/resurse/video/prezentare.mp4" type="video/mp4">
+                        <source src="/resurse/video/prezentare.webm" type="video/webm">
+                        <track src="/resurse/vtt/subtitrari_ro.vtt" kind="subtitles" srclang="ro" label="Romana" default>
+                        <track src="/resurse/vtt/subtitrari_en.vtt" kind="subtitles" srclang="en" label="English">
+                        Browserul dumneavoastra nu suporta redarea acestui videoclip.
+                    </video>
+                </section>
                 <section id="playlist-video">
-
                     <h2>Playlist tutoriale printare 3D</h2>
-
                     <p>
                         Urmatorul playlist prezinta tutoriale despre modelare si printare 3D.
                         Videoclipurile se redau automat si playlistul se reia de la inceput
                         dupa finalul ultimului videoclip.
                     </p>
-
                     <iframe
                         src="https://www.youtube.com/embed/videoseries?list=PLGqRUdq5ULsONnjEEPeBxxStEsobDKAtV&autoplay=1&loop=1&controls=1&playlist=PLGqRUdq5ULsONnjEEPeBxxStEsobDKAtV"
                         title="Playlist tutoriale printare 3D" allow="autoplay; encrypted-media" allowfullscreen>
@@ -383,11 +243,8 @@ materialul utilizat si timpul de printare.
                 </section>
                 <section id="formula">
                     <h3>Calcul estimativ al costului unei printari 3D</h3>
-
                     <p>Costul unui obiect printat 3D poate fi estimat folosind formula:</p>
-
                     <math>
-
                         <mrow>
                             <mi>Cost</mi>
                             <mo>=</mo>
@@ -397,110 +254,78 @@ materialul utilizat si timpul de printare.
                             <mo>/</mo>
                             <mi>gram</mi>
                         </mrow>
-
                     </math>
-
                     <p>
                         De exemplu, un obiect de 100g realizat din PLA poate costa aproximativ
                         100 × 0.25 lei.
                     </p>
-
                 </section>
                 <section id="termeni-conditii">
                     <h3>Termeni si conditii pentru serviciul de personalizare 3D</h3>
                     <details>
-
                         <summary>Click aici!</summary>
-                        <embed src="resurse/docs/termeni-personalizare-tipar3d.pdf" width="600" height="500"
+                        <embed src="/resurse/docs/termeni-personalizare-tipar3d.pdf" width="600" height="500"
                             type="application/pdf">
-
                     </details>
                 </section>
                 <h3>Magazin 3D pentru toate proiectele tale</h3>
-
                 <p>
                     Magazinul nostru 3D este dedicat celor pasionati de
                     printare 3D si tehnologie moderna. Prin personalizare 3d
                     puteti transforma orice idee intr-un obiect 3d real.
                 </p>
-
                 <p>
                     Tipar3D combina tipar 3d de inalta precizie cu design
                     creativ pentru a livra produse printate 3d de calitate.
                 </p>
-
             </section>
             <section id="produse">
-
                 <h2>Produsele noastre 3D</h2>
-
                 <p>
                     Magazinul nostru 3D ofera produse printate 3D variate,
                     realizate prin printare 3D moderna si tipar 3d de precizie.
                 </p>
-
                 <section id="figurine">
-
                     <h3>Figurine 3D personalizate</h3>
-
                     <p>
                         Realizam figurine 3D unice prin personalizare 3d,
                         potrivite pentru cadouri sau colectii.
                     </p>
-
                 </section>
-
                 <section id="piese">
-
                     <h3>Piese 3D functionale</h3>
-
                     <p>
                         Cream piese 3D tehnice si obiecte 3d functionale
                         pentru proiecte scolare sau profesionale.
                     </p>
-
                     <section id="prototipuri">
-
                         <h4>Prototipuri prin tipar 3D</h4>
-
                         <p>
                             Serviciile noastre de tipar 3d permit realizarea
                             rapida a prototipurilor si produselor printate 3d.
                         </p>
-
                     </section>
-
                 </section>
                 <section id="catalog">
-
                     <h2>Produse printate 3D populare</h2>
-
                     <p>Apasa pe un produs pentru a vedea pretul estimativ.</p>
-
-                    <img id="catalog-imagini" src="resurse/imagini/catalog.png" usemap="#image-map" alt="Catalog produse printate 3D">
-
+                    <img id="catalog-imagini" src="/resurse/imagini/catalog.png" usemap="#image-map" alt="Catalog produse printate 3D">
                     <map name="image-map">
-
                         <area alt="Breloc 3D" title="Breloc personalizat 3D" href="#breloc" coords="0,0,355,398"
                             shape="rect">
-
                         <area alt="Figurina 3D" title="Figurina printata 3D" href="#figurina" coords="381,0,693,399"
                             shape="rect">
-
                         <area alt="Suport telefon 3D" title="Suport telefon printat 3D" href="#suport"
                             coords="695,3,1053,399" shape="rect">
-
                     </map>
                     <section id="figurina">
                         <h3>Figurina 3D</h3>
                         <p>Pret estimativ: 25 lei</p>
                     </section>
-
                     <section id="suport">
                         <h3>Suport telefon printat 3D</h3>
                         <p>Pret estimativ: 30 lei</p>
                     </section>
-
                     <section id="breloc">
                         <h3>Breloc personalizat 3D</h3>
                         <p>Pret estimativ: 15 lei</p>
@@ -508,9 +333,7 @@ materialul utilizat si timpul de printare.
                 </section>
             </section>
             <section id="intrebari">
-
                 <h2>Intrebari frecvente despre printare 3D</h2>
-
                 <details>
                     <summary>Cat dureaza realizarea unui obiect printat 3D?</summary>
                     <p>
@@ -519,7 +342,6 @@ materialul utilizat si timpul de printare.
                         si peste 10 ore.
                     </p>
                 </details>
-
                 <details>
                     <summary>Ce materiale folositi pentru printare 3D?</summary>
                     <p>
@@ -527,59 +349,11 @@ materialul utilizat si timpul de printare.
                         in functie de tipul obiectului realizat.
                     </p>
                 </details>
-
             </section>
         </div>
         </div>
     </main>
-
-    <footer>
-        <a href="#" id="link-top" title="Mergi sus">
-            <div id="triunghi"></div>
-        </a>
-
-
-        <address>
-
-            Telefon:
-            <a href="tel:+40712345678">+40 712 345 678</a>
-
-            <br><br>
-
-            Adresa:
-            <a href="https://maps.google.com/?q=Facultatea+de+Matematica+si+Informatica+Bucuresti" target="_blank">
-                Strada Academiei 14, 010014 București
-            </a>
-            <br><br>
-            <iframe id="harta" src="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica+Bucuresti&output=embed"
-                width="400" height="300" style="border:0;" allowfullscreen="">
-            </iframe>
-            <br><br>
-
-            Email:
-            <a href="mailto:contact@tipar3d.ro">
-                contact@tipar3d.ro
-            </a>
-
-            <br><br>
-
-            WhatsApp:
-            <a href="https://wa.me/40712345678" target="_blank">
-                Trimite mesaj pe WhatsApp
-            </a>
-
-        </address>
-
-        <p>
-            <small>
-                &copy; Tipar3D - Stemate Cătălin,
-                creat la data de
-                <time datetime="2026-03-01">1 martie 2026</time>
-            </small>
-        </p>
-
-    </footer>
-
+    <%- include("../fragmente/footer")%>
     <script>
         window.onload = function() {
             var burger = document.querySelector('.burger');
@@ -592,5 +366,4 @@ materialul utilizat si timpul de printare.
         }
     </script>
 </body>
-
 </html>

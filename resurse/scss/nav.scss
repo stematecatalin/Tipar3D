@@ -1,12 +1,10 @@
+
+$culoare-bg: #4dabf7;
+$culoare-text: #ffffff;
+$culoare-submenu: #339af0;
+$culoare-hover: #74c0fc;
 $padding: 20px;
 $inaltime: 60px;
-
-body {
-  --culoare-bg: #4dabf7;
-  --culoare-text: #ffffff;
-  --culoare-submenu: #339af0;
-  --culoare-hover: #74c0fc;
-}
 
 @mixin link-baza {
   display: flex;
@@ -15,12 +13,12 @@ body {
   height: $inaltime;
   padding: 0 $padding;
   text-decoration: none;
-  color: var(--culoare-text);
+  color: $culoare-text;
 }
 
 #navbar-container {
   width: 100%;
-  background: var(--culoare-bg);
+  background: $culoare-bg;
   position: relative;
 
   .navbar {
@@ -81,7 +79,7 @@ body {
     transform: translateX(-50%) scale(0);
     transform-origin: top center;
 
-    background: var(--culoare-submenu);
+    background: $culoare-submenu;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -95,11 +93,11 @@ body {
         display: block;
         padding: 12px 20px;
         text-align: center;
-        color: var(--culoare-text);
+        color: $culoare-text;
         text-decoration: none;
 
         &:hover {
-          background: var(--culoare-hover);
+          background: $culoare-hover;
         }
       }
     }
@@ -151,7 +149,7 @@ body {
 
 @media (max-width: 600px) {
   #navbar-container {
-    background: var(--culoare-bg);
+    background: $culoare-bg;
     position: relative;
     height: $inaltime;
     display: flex;
@@ -189,7 +187,7 @@ body {
       top: 100%;
       left: 0;
       width: 100%;
-      background: var(--culoare-bg);
+      background: $culoare-bg;
       z-index: 1000;
       display: block !important;
       list-style: none;
@@ -228,7 +226,7 @@ body {
           font-size: 20px !important;
         }
 
-        &:hover { background: var(--culoare-hover); }
+        &:hover { background: $culoare-hover; }
       }
     }
 
@@ -264,7 +262,7 @@ body {
           transition: background-color 0.3s ease !important;
 
           &:hover {
-            background: var(--culoare-hover) !important;
+            background: $culoare-hover !important;
           }
         }
       }
@@ -280,5 +278,4 @@ body {
 }
 
 #proiect-scolar { display: none; }
-@import "print"; 
  

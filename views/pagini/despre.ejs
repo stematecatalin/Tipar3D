@@ -1,0 +1,46 @@
+<%- include('../fragmente/head') %>
+<body>
+    <%- include('../fragmente/header') %>
+    <main>
+        <section id="despre">
+            <h2>Despre serviciile noastre de printare 3D</h2>
+            <p>
+                Tipar3D este un magazin 3D specializat in printare 3D si tipar 3d
+                pentru realizarea de produse printate 3d personalizate.
+            </p>
+            <p>
+                Prin personalizare 3d si tehnologie moderna, realizam obiecte 3d
+                unice si piese 3d adaptate cerintelor clientilor nostri.
+            </p>
+            <p>
+                Istoricul nostru a inceput din pasiunea pentru tehnologie si dorinta de a oferi
+                solutii creative pentru prototipare si obiecte decorative personalizate.
+            </p>
+            <p>
+                Un exemplu de utilizare a tehnologiei poate fi gasit aici:
+                <a href="https://en.wikipedia.org/wiki/3D_printing#Applications" target="_blank">
+                    https://en.wikipedia.org/<wbr>wiki/3D_printing#Applications
+                </a>
+            </p>
+            <p>
+                Afla mai multe despre tehnologia moderna de printare 3D pe
+                <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
+                    Wikipedia
+                </a>.
+            </p>
+        </section>
+    </main>
+    <%- include("../fragmente/footer")%>
+    <script>
+        window.onload = function() {
+            var burger = document.querySelector('.burger');
+            var navbar = document.querySelector('.navbar');
+            if(burger && navbar) {
+                burger.onclick = function() {
+                    navbar.classList.toggle('open');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

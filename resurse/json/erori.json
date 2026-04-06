@@ -1,0 +1,52 @@
+{
+    "cale_baza": "/resurse/imagini/erori",
+    "eroare_default": {
+        "titlu": "Eroare de sistem",
+        "text": "A aparut o eroare neasteptata. Va rugam sa reincercati mai tarziu.",
+        "imagine": "interzis.png"
+    },
+    "info_erori": [
+        {
+            "identificator": 404,
+            "status": true,
+            "titlu": "Pagina nu a fost gasita",
+            "text": "Resursa solicitata nu exista pe acest server. Verificati adresa URL introdusa.",
+            "imagine": "lupa.png"
+        },
+        {
+            "identificator": 403,
+            "status": true,
+            "titlu": "Acces interzis",
+            "text": "Nu aveti permisiunile necesare pentru a accesa aceasta resursa sau folder.",
+            "imagine": "interzis.png"
+        },
+        {
+            "identificator": 400,
+            "status": true,
+            "titlu": "Cerere invalida",
+            "text": "Cererea dumneavoastra nu a putut fi procesata de server din cauza unei sintaxe incorecte.",
+            "imagine": "interzis.png"
+        },
+        {
+            "identificator": 1,
+            "status": false,
+            "titlu": "Mentenanta sistem",
+            "text": "Site-ul se afla in perioada de actualizare. Reveniti in curand.",
+            "imagine": "interzis.png"
+        },
+        {
+            "identificator": 2,
+            "status": false,
+            "titlu": "Eroare baza de date",
+            "text": "Serviciul de date este momentan indisponibil. Incercati peste cateva minute.",
+            "imagine": "interzis.png"
+        },
+        {
+            "identificator": 3,
+            "status": false,
+            "titlu": "Date incomplete",
+            "text": "Va rugam sa verificati corectitudinea datelor introduse in formular.",
+            "imagine": "interzis.png"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Tipar3D - eroare</title>
+        <%- include("../fragmente/head.ejs") %>
+        <link rel="stylesheet" href="/resurse/css/eroare.css">
+    </head>
+    <body>
+        <%- include("../fragmente/header.ejs") %>
+        <main>
+            <div class="container-eroare">
+                <div class="eroare-box">
+                    <div class="eroare-img">
+                        <img src="<%= imagine %>" alt="eroare">
+                    </div>
+
+                    <div class="eroare-text">
+                        <h1><%= titlu %></h1>
+                        <p><%= text %></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>
