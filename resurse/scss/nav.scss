@@ -1,24 +1,16 @@
-
-$culoare-bg: #4dabf7;
-$culoare-text: #ffffff;
-$culoare-submenu: #339af0;
-$culoare-hover: #74c0fc;
 $padding: 20px;
 $inaltime: 60px;
 
-@mixin link-baza {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: $inaltime;
-  padding: 0 $padding;
-  text-decoration: none;
-  color: $culoare-text;
+body {
+  --culoare-bg: #4dabf7;
+  --culoare-text: #ffffff;
+  --culoare-submenu: #339af0;
+  --culoare-hover: #74c0fc;
 }
 
 #navbar-container {
   width: 100%;
-  background: $culoare-bg;
+  background: var(--culoare-bg);
   position: relative;
 
   .navbar {
@@ -34,7 +26,13 @@ $inaltime: 60px;
       justify-content: center;
 
       > a {
-        @include link-baza;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $inaltime;
+        padding: 0 $padding;
+        text-decoration: none;
+        color: var(--culoare-text);
         position: relative;
 
         i {
@@ -79,7 +77,7 @@ $inaltime: 60px;
     transform: translateX(-50%) scale(0);
     transform-origin: top center;
 
-    background: $culoare-submenu;
+    background: var(--culoare-submenu);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -93,11 +91,11 @@ $inaltime: 60px;
         display: block;
         padding: 12px 20px;
         text-align: center;
-        color: $culoare-text;
+        color: var(--culoare-text);
         text-decoration: none;
 
         &:hover {
-          background: $culoare-hover;
+          background: var(--culoare-hover);
         }
       }
     }
@@ -109,19 +107,20 @@ $inaltime: 60px;
     z-index: $i;
   }
 }
-.burger{
-  display:none;
+
+.burger {
+  display: none;
 }
+
 @media (max-width: 900px) {
   #navbar-container {
     .navbar {
       .navbar-item {
         > a {
-          font-size: 0;
-
+          font-size: 14px !important;
           i {
-            font-size: 20px;
-            margin: 0;
+            font-size: 18px !important;
+            margin-right: 5px !important;
           }
         }
       }
@@ -149,8 +148,6 @@ $inaltime: 60px;
 
 @media (max-width: 600px) {
   #navbar-container {
-    background: $culoare-bg;
-    position: relative;
     height: $inaltime;
     display: flex;
     align-items: center;
@@ -187,7 +184,7 @@ $inaltime: 60px;
       top: 100%;
       left: 0;
       width: 100%;
-      background: $culoare-bg;
+      background: var(--culoare-bg);
       z-index: 1000;
       display: block !important;
       list-style: none;
@@ -226,7 +223,7 @@ $inaltime: 60px;
           font-size: 20px !important;
         }
 
-        &:hover { background: $culoare-hover; }
+        &:hover { background: var(--culoare-hover); }
       }
     }
 
@@ -262,7 +259,7 @@ $inaltime: 60px;
           transition: background-color 0.3s ease !important;
 
           &:hover {
-            background: $culoare-hover !important;
+            background: var(--culoare-hover) !important;
           }
         }
       }
@@ -278,4 +275,3 @@ $inaltime: 60px;
 }
 
 #proiect-scolar { display: none; }
- 

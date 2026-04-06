@@ -1,6 +1,13 @@
+body {
+  --culoare-bg: #4dabf7;
+  --culoare-text: #ffffff;
+  --culoare-submenu: #339af0;
+  --culoare-hover: #74c0fc;
+}
+
 #navbar-container {
   width: 100%;
-  background: #4dabf7;
+  background: var(--culoare-bg);
   position: relative;
 }
 #navbar-container .navbar {
@@ -22,7 +29,7 @@
   height: 60px;
   padding: 0 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--culoare-text);
   position: relative;
 }
 #navbar-container .navbar .navbar-item > a i {
@@ -57,7 +64,7 @@
   left: 50%;
   transform: translateX(-50%) scale(0);
   transform-origin: top center;
-  background: #339af0;
+  background: var(--culoare-submenu);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -69,11 +76,11 @@
   display: block;
   padding: 12px 20px;
   text-align: center;
-  color: #ffffff;
+  color: var(--culoare-text);
   text-decoration: none;
 }
 #navbar-container .navbar-submenu li a:hover {
-  background: #74c0fc;
+  background: var(--culoare-hover);
 }
 
 .navbar-item:nth-child(1) {
@@ -94,11 +101,11 @@
 
 @media (max-width: 900px) {
   #navbar-container .navbar .navbar-item > a {
-    font-size: 0;
+    font-size: 14px !important;
   }
   #navbar-container .navbar .navbar-item > a i {
-    font-size: 20px;
-    margin: 0;
+    font-size: 18px !important;
+    margin-right: 5px !important;
   }
 }
 @keyframes burger-anim {
@@ -120,8 +127,6 @@
 }
 @media (max-width: 600px) {
   #navbar-container {
-    background: #4dabf7;
-    position: relative;
     height: 60px;
     display: flex;
     align-items: center;
@@ -160,7 +165,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: #4dabf7;
+    background: var(--culoare-bg);
     z-index: 1000;
     display: block !important;
     list-style: none;
@@ -197,7 +202,7 @@
     font-size: 20px !important;
   }
   #navbar-container .navbar-item > a:hover {
-    background: #74c0fc;
+    background: var(--culoare-hover);
   }
   #navbar-container .navbar-submenu {
     position: static !important;
@@ -231,7 +236,7 @@
     transition: background-color 0.3s ease !important;
   }
   #navbar-container .navbar-submenu li a:hover {
-    background: #74c0fc !important;
+    background: var(--culoare-hover) !important;
   }
   #navbar-container .navbar-item:hover .navbar-submenu {
     max-height: 500px !important;
