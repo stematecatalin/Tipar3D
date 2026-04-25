@@ -63,7 +63,7 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%) scale(0);
-  transform-origin: top center;
+  transform-origin: center;
   background: var(--culoare-submenu);
   list-style: none;
   margin: 0;
@@ -99,9 +99,9 @@ body {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 601px) {
   #navbar-container .navbar .navbar-item > a {
-    font-size: 14px !important;
+    font-size: 0px !important;
   }
   #navbar-container .navbar .navbar-item > a i {
     font-size: 18px !important;

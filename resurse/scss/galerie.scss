@@ -1,0 +1,100 @@
+$numar-imagini-ciclu: 6;
+$pattern-coloane: (2, 3, 1, 3, 1, 2);
+
+#galerie-statica {
+    text-align: center;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1200px;
+    grid-column: 1 / -1;
+}
+
+#grid-galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    counter-reset: counter-galerie;
+    justify-content: center;
+    margin: 0 auto;
+
+    figure {
+        counter-increment: counter-galerie;
+        margin: 0;
+        border: 2px solid var(--accent);
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        transition: all 1.2s ease;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            filter: brightness(50%);
+            transition: filter 1.2s ease;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background: var(--primary);
+            
+            img {
+                filter: brightness(100%);
+            }
+
+            figcaption {
+                color: white;
+            }
+            
+            .sursa-atribuire a {
+                color: yellow;
+            }
+        }
+
+        .index-galerie::before {
+            content: counter(counter-galerie, decimal-leading-zero) ". ";
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 1em;
+            text-align: center;
+            color: #333;
+        }
+    }
+}
+
+@media (min-width: 1101px) {
+    #grid-galerie {
+        @for $i from 1 through $numar-imagini-ciclu {
+            $coloana: nth($pattern-coloane, $i);
+            
+            figure:nth-child(#{$numar-imagini-ciclu}n + #{$i}) {
+                grid-column: $coloana;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    #grid-galerie {
+        grid-template-columns: repeat(2, 1fr);
+        
+        figure {
+            grid-column: auto !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #grid-galerie {
+        grid-template-columns: 1fr;
+
+        figure {
+            grid-column: auto !important;
+        }
+    }
+}

@@ -24,33 +24,32 @@
                 </p>
             </section>
             <section id="termeni">
-                <h2>Termeni folositi in printare 3D</h2>
-                <dl>
-                    <dt>Printare 3D</dt>
-                    <dd>Proces de creare a unui obiect tridimensional prin depunerea succesiva de material.</dd>
-                    <dt>Tipar 3D</dt>
-                    <dd>Tehnologie moderna utilizata pentru realizarea produselor printate 3D.</dd>
-                    <dt>Personalizare 3D</dt>
-                    <dd>Adaptarea unui model 3D in functie de cerintele clientului.</dd>
-                </dl>
+            <h2>Termeni folositi in printare 3D</h2>
+            <dl>
+                <dt>Printare 3D</dt>
+                <dd>Proces de creare a unui obiect tridimensional prin depunerea succesiva de material.</dd>
+                <dt>Tipar 3D</dt>
+                <dd>Tehnologie moderna utilizata pentru realizarea produselor printate 3D.</dd>
+                <dt>Personalizare 3D</dt>
+                <dd>Adaptarea unui model 3D in functie de cerintele clientului.</dd>
+            </dl>
             </section>
             </div>
-                            <div id="imagine-zona1">
-                    <figure>
-                        <a href="/resurse/imagini/imprimanta_mare.png">
-                            <picture>
-                                <source srcset="/resurse/imagini/imprimanta-200x200.png" media="(max-width: 600px)">
-                                <source srcset="/resurse/imagini/imprimanta-700x700.png" media="(max-width: 1000px)">
-                                <img src="/resurse/imagini/imprimanta-1200x1000.png" alt="Imprimanta 3D Bambu Lab P1S"
-                                    title="Imprimanta 3D utilizata pentru realizarea produselor printate 3D">
-                            </picture>
-                        </a>
-                        <figcaption>
-                            Imprimanta utilizata pentru <b>printare 3D</b>.
-                        </figcaption>
-                    </figure>
-                </div>
-        </div>
+
+            <%- include('../fragmente/galerie-statica', { imagini: locals.imagini }) %>
+
+            <%- include('../fragmente/galerie-animata', { imaginiAnimata: locals.imaginiAnimata }) %>
+
+                        <div id="imagine-zona1">
+                            <figure>
+                                <a href="/resurse/imagini/imprimanta-1200x1000.png" style="text-decoration: none;">
+                                    <div class="imagine-duotone"></div>
+                                </a>
+                                <figcaption>
+                                    Imprimanta utilizata pentru <b>printare 3D</b>.
+                                </figcaption>
+                            </figure>
+                        </div>        </div>
         <div class="zona2">
  <section id="tabel_costuri">
 <div id="container-tabel-costuri">
@@ -120,6 +119,14 @@ materialul utilizat si timpul de printare.
         <div class="zona4">
             <section id="anunt-important">
                 <h2>Anunt important</h2>
+                <div class="card border-primary mb-3">
+                    <div class="card-header bg-success text-white">Promoție Nouă!</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title text-success">Reduceri Figurine 3D</h5>
+                        <p class="card-text">Folosește codul <strong>TIPAR20</strong> pentru 20% reducere la orice model personalizat.</p>
+                        <button type="button" class="btn btn-primary">Vezi modele</button>
+                    </div>
+                </div>
                 <p>
                     <strong>ATENTIE! In perioada sarbatorilor comenzile de printare 3D pot avea intarzieri.</strong>
                 </p>

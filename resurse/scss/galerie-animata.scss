@@ -1,0 +1,125 @@
+$n: 7 !default;
+
+#galerie-animata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+    grid-column: 1 / -1;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 1100px) {
+        display: none;
+    }
+}
+
+#border-galerie-animata {
+    display: inline-block;
+    padding: 0;
+    border: 30px solid transparent;
+    border-image-source: url("/resurse/imagini/galerie/galerie-border.png");
+    border-image-slice: 30;
+    border-image-repeat: round;
+    background-color: #fff;
+}
+
+#container-galerie-animata {
+    width: 440px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+#grid-galerie-animata {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    figure {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        opacity: 0;
+        transform-origin: left center;
+        animation: animatie-galerie #{$n * 4}s linear infinite;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            height: 85%;
+            object-fit: cover;
+        }
+
+        figcaption {
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255,255,255,0.9);
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+    }
+
+    @for $i from 1 through $n {
+        figure:nth-child(#{$i}) {
+            animation-delay: #{($i - 1) * 4}s;
+        }
+    }
+
+    &:hover figure {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes animatie-galerie {
+    0% {
+        z-index: 1;
+        opacity: 0;
+        transform: scaleY(1) rotate(0deg);
+    }
+    1% {
+        opacity: 0.4;
+    }
+    #{100 / $n * 0.9}% {
+        z-index: 1;
+        opacity: 0.4;
+    }
+    #{100 / $n}% {
+        z-index: 10;
+        opacity: 1;
+    }
+    #{100 / $n * 1.7}% {
+        z-index: 10;
+        opacity: 1;
+        transform: scaleY(1) rotate(0deg);
+    }
+    #{100 / $n * 1.85}% {
+        z-index: 10;
+        opacity: 1;
+        transform: scaleY(0.4) rotate(0deg);
+    }
+    #{100 / $n * 2}% {
+        z-index: 10;
+        opacity: 0;
+        transform: scaleY(0.4) rotate(90deg);
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}

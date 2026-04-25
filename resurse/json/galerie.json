@@ -1,0 +1,117 @@
+{
+    "cale_galerie": "resurse/imagini/galerie",
+    "imagini": [
+        {
+            "cale_relativa": "image.jpg",
+            "nume_imag": "3DBenchy",
+            "alternativ": "Barcuta de test",
+            "descriere_imag": "3DBenchy este un model de test pentru imprimante 3D",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img1.png",
+            "nume_imag": "Pisică cu cască",
+            "alternativ": "Astronaut pisică",
+            "descriere_imag": "O figurină printată 3D reprezentând o pisică astronaut",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img2.png",
+            "nume_imag": "Piesă mecanică",
+            "alternativ": "Angrenaj",
+            "descriere_imag": "Sistem de roți dințate funcțional",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img3.jpeg",
+            "nume_imag": "Model complex",
+            "alternativ": "Structură organică",
+            "descriere_imag": "Model geometric complex realizat prin personalizare 3D",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img4.png",
+            "nume_imag": "Prototip carcasă",
+            "alternativ": "Carcasă electronică",
+            "descriere_imag": "Prototip realizat prin tipar 3D pentru un proiect electronic",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img5.png",
+            "nume_imag": "Obiect decorativ",
+            "alternativ": "Vază 3D",
+            "descriere_imag": "Vază decorativă cu design modern",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img6.png",
+            "nume_imag": "Suport telefon",
+            "alternativ": "Suport ergonomic",
+            "descriere_imag": "Suport de telefon printat 3D",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img7.png",
+            "nume_imag": "Breloc personalizat",
+            "alternativ": "Breloc nume",
+            "descriere_imag": "Breloc personalizat realizat la comandă",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img8.png",
+            "nume_imag": "Piesă schimb",
+            "alternativ": "Componentă tehnică",
+            "descriere_imag": "Piesă de schimb realizată prin printare 3D",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img9.png",
+            "nume_imag": "Articulație robot",
+            "alternativ": "Element mobil",
+            "descriere_imag": "Articulație pentru un braț robotic",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img10.png",
+            "nume_imag": "Miniatură RPG",
+            "alternativ": "Personaj fantasy",
+            "descriere_imag": "Miniatură detaliată pentru jocuri de societate",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img11.png",
+            "nume_imag": "Vază decorativă",
+            "alternativ": "Vază spiralată",
+            "descriere_imag": "Obiect 3D decorativ pentru casă",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img12.png",
+            "nume_imag": "Suport creioane",
+            "alternativ": "Accesoriu birou",
+            "descriere_imag": "Suport organizator pentru birou",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img13.png",
+            "nume_imag": "Jucărie educativă",
+            "alternativ": "Puzzle 3D",
+            "descriere_imag": "Puzzle mecanic pentru copii",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img14.png",
+            "nume_imag": "Machetă casă",
+            "alternativ": "Model arhitectural",
+            "descriere_imag": "Machetă la scară realizată prin tipar 3D",
+            "intervale_ore": [[0, 24]]
+        },
+        {
+            "cale_relativa": "img15.png",
+            "nume_imag": "Cadou personalizat",
+            "alternativ": "Litosferă",
+            "descriere_imag": "Cadou unic realizat prin tehnologie modernă",
+            "intervale_ore": [[0, 24]]
+        }
+    ]
+}

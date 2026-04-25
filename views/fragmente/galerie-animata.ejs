@@ -1,0 +1,20 @@
+<% if (locals.cssGalerieAnimata) { %>
+    <style>
+        <%- locals.cssGalerieAnimata %>
+    </style>
+<% } %>
+<section id="galerie-animata">
+    <h2>Galerie Animată</h2>
+    <div id="border-galerie-animata">
+        <div id="container-galerie-animata">
+            <div id="grid-galerie-animata">
+                <% for(let imag of locals.imaginiAnimata) { %>
+                    <figure>
+                        <img src="<%- imag.fisier %>" alt="<%- imag.alternativ %>" title="<%- imag.descriere_imag %>">
+                        <figcaption><%- imag.nume_imag %></figcaption>
+                    </figure>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>

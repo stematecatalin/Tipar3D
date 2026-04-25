@@ -1,0 +1,30 @@
+$primary: #7F9DF5;
+$success: #877FF5;
+$info: #88C7F7;
+$body-bg: #F2F1FF;
+$body-color: #333;
+
+$btn-close-color: #D47FF5;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 700px,
+  lg: 1100px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$border-radius: 15px;
+$border-radius-sm: 8px;
+$border-radius-lg: 30px;
+
+$h1-font-size: 3.5rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 1.75rem;
+
+$font-family-sans-serif: 'Roboto', system-ui, -apple-system, sans-serif;
+
+$spacer: 1.5rem;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

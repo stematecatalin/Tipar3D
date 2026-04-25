@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/resurse/css/galerie.css" type="text/css">
+<section id="galerie-statica">
+    <h2>Galerie</h2>
+    <div id="grid-galerie">
+        <% for(let imag of locals.imagini) { %>
+            <figure>
+                <picture>
+                    <source srcset="<%- imag.fisier_mic %>" type="image/webp" media="(max-width: 600px)">
+                    <source srcset="<%- imag.fisier_mediu %>" type="image/webp" media="(max-width: 1100px)">
+                    <img src="<%- imag.fisier %>" 
+                         alt="<%- imag.alternativ || imag.nume_imag %>" 
+                         title="<%- imag.descriere_imag %>">
+                </picture>
+                <figcaption>
+                    <span class="index-galerie"></span>
+                    <strong><%- imag.nume_imag %></strong>: <%- imag.alternativ %>
+                    
+                    <% if(imag.licenta === "CC-BY") { %>
+                        <div class="sursa-atribuire">
+                            <small>Autor: <%- imag.autor %> | <a href="<%- imag.sursa %>" target="_blank">Sursă</a></small>
+                        </div>
+                    <% } %>
+                </figcaption>
+            </figure>
+        <% } %>
+    </div>
+</section>

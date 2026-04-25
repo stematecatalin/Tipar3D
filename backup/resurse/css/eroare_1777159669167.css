@@ -1,0 +1,40 @@
+.container-eroare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.eroare-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  background: linear-gradient(to right, var(--secondary), var(--accent));
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 90%;
+}
+
+.eroare-img img {
+  width: 120px;
+  height: auto;
+}
+
+.eroare-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.eroare-text h1 {
+  font-size: 1.8rem;
+  color: #e53935;
+  margin: 0;
+}
+.eroare-text p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}

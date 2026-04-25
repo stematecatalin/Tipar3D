@@ -1,0 +1,14 @@
+<%- include('../fragmente/head') %>
+<body>
+    <%- include('../fragmente/header') %>
+    <main>
+        <div class="grid-container">
+            <div class="zona-galerie" style="grid-column: 1/-1;">
+                <%- include('../fragmente/galerie-animata', { imaginiAnimata: locals.imaginiAnimata }) %>
+                <%- include('../fragmente/galerie-statica', { imagini: locals.imagini }) %>
+            </div>
+        </div>
+    </main>
+    <%- include("../fragmente/footer")%>
+</body>
+</html>
