@@ -36,17 +36,23 @@ iframe {
     height: auto;
 }
 
-a:visited {
-    color: var(--culoare-visited);
+a {
+    color: #2b5797; /* Un albastru vizibil si placut */
+    text-decoration: underline;
 }
 
-a[href^="http"]:not(.buton-video-container)::before {
+a:visited {
+    color: #5b398d; /* Un mov discret pentru link-urile vizitate */
+}
+
+a:not(.buton-video-container):not(#link-top):not(.navbar-item a):not(.navbar-submenu a)::before {
     content: "↗";
     font-size: 1.5em;
     margin-right: 0.2em;
     display: inline-block;
     transition: color 0.3s;
     vertical-align: middle;
+    color: var(--accent);
 }
 
 a[href^="http"]:not(.buton-video-container):hover::before {
