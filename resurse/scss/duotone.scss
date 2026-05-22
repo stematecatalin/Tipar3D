@@ -1,3 +1,4 @@
+/* #BONUS DUOTONE */
 .imagine-duotone {
     position: relative;
     width: 100%;
@@ -9,45 +10,44 @@
     background-position: center;
     border-radius: 10px;
     overflow: hidden;
-    filter: grayscale(100%) contrast(1.1);
-    transition: all 0.6s ease;
+    filter: brightness(200%) grayscale(0);
+    transition: all 2s linear;
     border: 3px solid var(--accent);
 }
 
-.imagine-duotone::before,
-.imagine-duotone::after {
-    content: "";
+.imagine-duotone::after, 
+.imagine-duotone::before {
+    content: " ";
     position: absolute;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    transition: background-color 0.8s ease, opacity 0.8s ease;
+    transition: all 2s linear;
 }
 
-.imagine-duotone::before {
-    background-color: rgba(0, 51, 153, 0.7);
-    mix-blend-mode: multiply;
+.imagine-duotone::after {
+    background-color: rgb(0, 0, 255);
+    mix-blend-mode: lighten;
     z-index: 1;
 }
 
-.imagine-duotone::after {
-    background-color: rgba(153, 102, 255, 0.4);
-    mix-blend-mode: screen;
+.imagine-duotone::before {
+    background-color: rgb(205, 0, 255);
+    mix-blend-mode: darken;
     z-index: 2;
 }
 
-.imagine-duotone:hover::before {
-    background-color: rgba(255, 102, 0, 0.6);
+.imagine-duotone:hover::after {
+    background-color: rgb(255, 0, 0); 
 }
 
-.imagine-duotone:hover::after {
-    background-color: rgba(255, 204, 0, 0.3);
+.imagine-duotone:hover::before {
+    background-color: rgb(255, 255, 0);
 }
 
 .imagine-duotone:hover {
-    filter: grayscale(0%) contrast(1);
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 @media (max-width: 600px) {
@@ -55,3 +55,4 @@
         height: 250px;
     }
 }
+/* ##### */

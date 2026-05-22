@@ -29,4 +29,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="/resurse/css/nav.css">
     <link rel="stylesheet" href="/resurse/css/print.css">
-</head>
+    <script src="/resurse/js/tema.js"></script>
+    <script src="/resurse/js/orar.js"></script>
+    <script src="/resurse/js/oferte.js"></script>
+    <script>
+        /* #BONUS 2 */
+        const initialTheme = localStorage.getItem("tema");
+        if (initialTheme && initialTheme !== "light") {
+            document.documentElement.classList.add(initialTheme);
+            document.addEventListener("DOMContentLoaded", () => document.body.classList.add(initialTheme));
+        }
+        /* ##### */
+    </script>
+    </head>

@@ -1,8 +1,10 @@
     <p id="proiect-scolar">Acesta este un proiect școlar!</p>
     <div id="container-anunt">
+    
         <div id="text-anunt">
             Livrare gratuită la comenzi de peste 200 lei! Tipar 3D de calitate superioară! Reduceri de sezon de până la 30%! Bine ați venit la Tipar3D!
         </div>
+        
     </div>
     <header>
         <div id="wrapper-logo-centrat">
@@ -11,13 +13,17 @@
                 <h1 id="logo-reflexie">Tipar3D</h1>
             </div>
         </div>
-        <nav id="navbar-container">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-            <ul class="navbar">
+    </header>
+    <nav id="navbar-container">
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar">
+                <li class="navbar-item"><a href="#"><i class="fa-sharp fa-solid fa-users fa-beat-fade"
+                            style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"></i>
+                        Inregistrare</a></li>
                 <li class="navbar-item">
                     <a href="/"> <i class="fa-solid fa-house"></i> Acasa</a>
                     <ul class="navbar-submenu">
@@ -30,10 +36,34 @@
                 </li>
                 <li class="navbar-item"><a href="/despre"><i class="fa-solid fa-circle-info"></i> Despre noi</a></li>
                 <li class="navbar-item"><a href="/galerie"><i class="fa-solid fa-image"></i> Galerie</a></li>
-                <li class="navbar-item"><a href="#"><i class="fa-sharp fa-solid fa-users fa-beat-fade"
-                            style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"></i>
-                        Inregistrare</a></li>
-                <li class="navbar-item"><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                <% /* #BONUS 19 */ %>
+                <li class="navbar-item"><a href="#" id="link-orar"><i class="fa-solid fa-clock"></i> Orar</a></li>
+                <%- include('./orar') %>
+                <% /* ##### */ %>
+                <li class="navbar-item">
+                    <a href="/produse"><i class="fa-solid fa-cart-shopping"></i> Produse</a>
+                    <ul class="navbar-submenu">
+                        <li><a href="/produse">Toate</a></li>
+                        <% /* #BONUS 17 */ %>
+                        <li><a href="/seturi" style="color: var(--primary); font-weight: bold;">Seturi Produse</a></li>
+                        <% /* ##### */ %>
+                        <% if (locals.categorii) { %>
+                            <% for (let cat of categorii) { %>
+                                <li><a href="/produse?categorie=<%= cat %>"><%= cat.charAt(0).toUpperCase() + cat.slice(1) %></a></li>
+                            <% } %>
+                        <% } %>
+                    </ul>
+                </li>
+                <% /* #BONUS 2 */ %>
+                <li class="navbar-item d-flex align-items-center ms-3">
+                    <i class="fa-solid fa-palette me-2 text-secondary"></i>
+                    <select id="select-tema" class="form-select form-select-sm border-secondary" style="width: auto; cursor: pointer;">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="cyberpunk">Cyberpunk</option>
+                    </select>
+                </li>
+                <% /* ##### */ %>
             </ul>
         </nav>
     </header>

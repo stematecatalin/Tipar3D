@@ -19,6 +19,8 @@
     padding-right: 50px;
 }
 
+
+
 @keyframes plimbare-anunt {
     0% {
         transform: translateX(100vw);
@@ -27,6 +29,8 @@
         transform: translateX(-100%);
     }
 }
+
+
 
 #container-anunt:hover #text-anunt {
     animation-play-state: paused;

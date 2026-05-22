@@ -1,0 +1,994 @@
+{
+  "oferte": [
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T15:02:11.840Z",
+      "data-finalizare": "2026-05-22T15:04:11.840Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T15:00:11.811Z",
+      "data-finalizare": "2026-05-22T15:02:11.811Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:58:11.792Z",
+      "data-finalizare": "2026-05-22T15:00:11.792Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:56:11.763Z",
+      "data-finalizare": "2026-05-22T14:58:11.763Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:54:11.779Z",
+      "data-finalizare": "2026-05-22T14:56:11.779Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:54:07.434Z",
+      "data-finalizare": "2026-05-22T14:56:07.434Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:54:05.950Z",
+      "data-finalizare": "2026-05-22T14:56:05.950Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:54:04.450Z",
+      "data-finalizare": "2026-05-22T14:56:04.450Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:54:02.862Z",
+      "data-finalizare": "2026-05-22T14:56:02.862Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:54:00.344Z",
+      "data-finalizare": "2026-05-22T14:56:00.344Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:58.154Z",
+      "data-finalizare": "2026-05-22T14:55:58.154Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:55.433Z",
+      "data-finalizare": "2026-05-22T14:55:55.433Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:53:53.774Z",
+      "data-finalizare": "2026-05-22T14:55:53.774Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:52.022Z",
+      "data-finalizare": "2026-05-22T14:55:52.022Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:53:50.017Z",
+      "data-finalizare": "2026-05-22T14:55:50.017Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:47.987Z",
+      "data-finalizare": "2026-05-22T14:55:47.987Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:53:46.031Z",
+      "data-finalizare": "2026-05-22T14:55:46.031Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:44.041Z",
+      "data-finalizare": "2026-05-22T14:55:44.041Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:53:42.092Z",
+      "data-finalizare": "2026-05-22T14:55:42.092Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:40.143Z",
+      "data-finalizare": "2026-05-22T14:55:40.143Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:53:38.186Z",
+      "data-finalizare": "2026-05-22T14:55:38.186Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:36.270Z",
+      "data-finalizare": "2026-05-22T14:55:36.270Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:53:34.251Z",
+      "data-finalizare": "2026-05-22T14:55:34.251Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:32.288Z",
+      "data-finalizare": "2026-05-22T14:55:32.288Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:30.306Z",
+      "data-finalizare": "2026-05-22T14:55:30.306Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:53:28.312Z",
+      "data-finalizare": "2026-05-22T14:55:28.312Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:26.371Z",
+      "data-finalizare": "2026-05-22T14:55:26.371Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:53:24.419Z",
+      "data-finalizare": "2026-05-22T14:55:24.419Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:22.470Z",
+      "data-finalizare": "2026-05-22T14:55:22.470Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:53:20.511Z",
+      "data-finalizare": "2026-05-22T14:55:20.511Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:18.501Z",
+      "data-finalizare": "2026-05-22T14:55:18.501Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:53:16.531Z",
+      "data-finalizare": "2026-05-22T14:55:16.531Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:14.563Z",
+      "data-finalizare": "2026-05-22T14:55:14.563Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:12.593Z",
+      "data-finalizare": "2026-05-22T14:55:12.593Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:53:10.626Z",
+      "data-finalizare": "2026-05-22T14:55:10.626Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:08.565Z",
+      "data-finalizare": "2026-05-22T14:55:08.565Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:53:06.652Z",
+      "data-finalizare": "2026-05-22T14:55:06.652Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:53:04.925Z",
+      "data-finalizare": "2026-05-22T14:55:04.925Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:53:03.349Z",
+      "data-finalizare": "2026-05-22T14:55:03.349Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:53:01.660Z",
+      "data-finalizare": "2026-05-22T14:55:01.660Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:53:00.108Z",
+      "data-finalizare": "2026-05-22T14:55:00.108Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:52:58.655Z",
+      "data-finalizare": "2026-05-22T14:54:58.655Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:52:56.716Z",
+      "data-finalizare": "2026-05-22T14:54:56.716Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:52:54.791Z",
+      "data-finalizare": "2026-05-22T14:54:54.791Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:52:52.739Z",
+      "data-finalizare": "2026-05-22T14:54:52.739Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:52:50.843Z",
+      "data-finalizare": "2026-05-22T14:54:50.843Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:52:49.092Z",
+      "data-finalizare": "2026-05-22T14:54:49.092Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:52:47.522Z",
+      "data-finalizare": "2026-05-22T14:54:47.522Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:52:46.018Z",
+      "data-finalizare": "2026-05-22T14:54:46.018Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:52:44.523Z",
+      "data-finalizare": "2026-05-22T14:54:44.523Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:52:43.090Z",
+      "data-finalizare": "2026-05-22T14:54:43.090Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:52:41.626Z",
+      "data-finalizare": "2026-05-22T14:54:41.626Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:52:40.075Z",
+      "data-finalizare": "2026-05-22T14:54:40.075Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:52:34.143Z",
+      "data-finalizare": "2026-05-22T14:54:34.143Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:52:29.477Z",
+      "data-finalizare": "2026-05-22T14:54:29.477Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:52:27.565Z",
+      "data-finalizare": "2026-05-22T14:54:27.565Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:52:25.645Z",
+      "data-finalizare": "2026-05-22T14:54:25.645Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:52:23.752Z",
+      "data-finalizare": "2026-05-22T14:54:23.752Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:52:21.024Z",
+      "data-finalizare": "2026-05-22T14:54:21.024Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:52:16.031Z",
+      "data-finalizare": "2026-05-22T14:54:16.031Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:52:14.062Z",
+      "data-finalizare": "2026-05-22T14:54:14.062Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:52:12.069Z",
+      "data-finalizare": "2026-05-22T14:54:12.069Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:52:09.688Z",
+      "data-finalizare": "2026-05-22T14:54:09.688Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:52:07.918Z",
+      "data-finalizare": "2026-05-22T14:54:07.918Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:52:05.992Z",
+      "data-finalizare": "2026-05-22T14:54:05.992Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:52:04.027Z",
+      "data-finalizare": "2026-05-22T14:54:04.027Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:52:01.253Z",
+      "data-finalizare": "2026-05-22T14:54:01.253Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:59.769Z",
+      "data-finalizare": "2026-05-22T14:53:59.769Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:57.816Z",
+      "data-finalizare": "2026-05-22T14:53:57.816Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:55.852Z",
+      "data-finalizare": "2026-05-22T14:53:55.852Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:53.901Z",
+      "data-finalizare": "2026-05-22T14:53:53.901Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:51.931Z",
+      "data-finalizare": "2026-05-22T14:53:51.931Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:49.951Z",
+      "data-finalizare": "2026-05-22T14:53:49.951Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:48.044Z",
+      "data-finalizare": "2026-05-22T14:53:48.044Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:46.130Z",
+      "data-finalizare": "2026-05-22T14:53:46.130Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:44.129Z",
+      "data-finalizare": "2026-05-22T14:53:44.129Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:42.348Z",
+      "data-finalizare": "2026-05-22T14:53:42.348Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:51:40.529Z",
+      "data-finalizare": "2026-05-22T14:53:40.529Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:38.665Z",
+      "data-finalizare": "2026-05-22T14:53:38.665Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:36.787Z",
+      "data-finalizare": "2026-05-22T14:53:36.787Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:35.303Z",
+      "data-finalizare": "2026-05-22T14:53:35.303Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:33.725Z",
+      "data-finalizare": "2026-05-22T14:53:33.725Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:51:32.055Z",
+      "data-finalizare": "2026-05-22T14:53:32.055Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:30.473Z",
+      "data-finalizare": "2026-05-22T14:53:30.473Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:29.023Z",
+      "data-finalizare": "2026-05-22T14:53:29.023Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:27.522Z",
+      "data-finalizare": "2026-05-22T14:53:27.522Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:25.916Z",
+      "data-finalizare": "2026-05-22T14:53:25.916Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:51:24.448Z",
+      "data-finalizare": "2026-05-22T14:53:24.448Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:22.573Z",
+      "data-finalizare": "2026-05-22T14:53:22.573Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:20.727Z",
+      "data-finalizare": "2026-05-22T14:53:20.727Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:18.692Z",
+      "data-finalizare": "2026-05-22T14:53:18.692Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:16.758Z",
+      "data-finalizare": "2026-05-22T14:53:16.758Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:14.277Z",
+      "data-finalizare": "2026-05-22T14:53:14.277Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:51:11.546Z",
+      "data-finalizare": "2026-05-22T14:53:11.546Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:09.519Z",
+      "data-finalizare": "2026-05-22T14:53:09.519Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:07.532Z",
+      "data-finalizare": "2026-05-22T14:53:07.532Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:51:05.597Z",
+      "data-finalizare": "2026-05-22T14:53:05.597Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:51:03.709Z",
+      "data-finalizare": "2026-05-22T14:53:03.709Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:51:01.566Z",
+      "data-finalizare": "2026-05-22T14:53:01.566Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:59.647Z",
+      "data-finalizare": "2026-05-22T14:52:59.647Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:57.778Z",
+      "data-finalizare": "2026-05-22T14:52:57.778Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:50:55.844Z",
+      "data-finalizare": "2026-05-22T14:52:55.844Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:53.968Z",
+      "data-finalizare": "2026-05-22T14:52:53.968Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:50:52.067Z",
+      "data-finalizare": "2026-05-22T14:52:52.067Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:50.229Z",
+      "data-finalizare": "2026-05-22T14:52:50.229Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:48.343Z",
+      "data-finalizare": "2026-05-22T14:52:48.343Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:50:46.425Z",
+      "data-finalizare": "2026-05-22T14:52:46.425Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:50:44.509Z",
+      "data-finalizare": "2026-05-22T14:52:44.509Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:42.561Z",
+      "data-finalizare": "2026-05-22T14:52:42.561Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:50:40.626Z",
+      "data-finalizare": "2026-05-22T14:52:40.626Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:38.724Z",
+      "data-finalizare": "2026-05-22T14:52:38.724Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:50:36.809Z",
+      "data-finalizare": "2026-05-22T14:52:36.809Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:34.893Z",
+      "data-finalizare": "2026-05-22T14:52:34.893Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:33.029Z",
+      "data-finalizare": "2026-05-22T14:52:33.029Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:50:31.127Z",
+      "data-finalizare": "2026-05-22T14:52:31.127Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:50:29.269Z",
+      "data-finalizare": "2026-05-22T14:52:29.269Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:27.380Z",
+      "data-finalizare": "2026-05-22T14:52:27.380Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:50:25.527Z",
+      "data-finalizare": "2026-05-22T14:52:25.527Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:23.684Z",
+      "data-finalizare": "2026-05-22T14:52:23.684Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:50:21.767Z",
+      "data-finalizare": "2026-05-22T14:52:21.767Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:19.937Z",
+      "data-finalizare": "2026-05-22T14:52:19.937Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:18.012Z",
+      "data-finalizare": "2026-05-22T14:52:18.012Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:16.159Z",
+      "data-finalizare": "2026-05-22T14:52:16.159Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:50:14.203Z",
+      "data-finalizare": "2026-05-22T14:52:14.203Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:50:12.274Z",
+      "data-finalizare": "2026-05-22T14:52:12.274Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:50:10.372Z",
+      "data-finalizare": "2026-05-22T14:52:10.372Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:50:08.210Z",
+      "data-finalizare": "2026-05-22T14:52:08.210Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:50:06.293Z",
+      "data-finalizare": "2026-05-22T14:52:06.293Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:50:04.477Z",
+      "data-finalizare": "2026-05-22T14:52:04.477Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:50:02.388Z",
+      "data-finalizare": "2026-05-22T14:52:02.388Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:59.320Z",
+      "data-finalizare": "2026-05-22T14:51:59.320Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:57.498Z",
+      "data-finalizare": "2026-05-22T14:51:57.498Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:55.734Z",
+      "data-finalizare": "2026-05-22T14:51:55.734Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:54.167Z",
+      "data-finalizare": "2026-05-22T14:51:54.167Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:52.799Z",
+      "data-finalizare": "2026-05-22T14:51:52.799Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:49:51.411Z",
+      "data-finalizare": "2026-05-22T14:51:51.411Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:50.043Z",
+      "data-finalizare": "2026-05-22T14:51:50.043Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:49:48.817Z",
+      "data-finalizare": "2026-05-22T14:51:48.817Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:47.540Z",
+      "data-finalizare": "2026-05-22T14:51:47.540Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:49:46.313Z",
+      "data-finalizare": "2026-05-22T14:51:46.313Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:49:45.066Z",
+      "data-finalizare": "2026-05-22T14:51:45.066Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:43.835Z",
+      "data-finalizare": "2026-05-22T14:51:43.835Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:49:42.669Z",
+      "data-finalizare": "2026-05-22T14:51:42.669Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:41.494Z",
+      "data-finalizare": "2026-05-22T14:51:41.494Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:40.414Z",
+      "data-finalizare": "2026-05-22T14:51:40.414Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:39.313Z",
+      "data-finalizare": "2026-05-22T14:51:39.313Z",
+      "reducere": 5
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:38.270Z",
+      "data-finalizare": "2026-05-22T14:51:38.270Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:37.191Z",
+      "data-finalizare": "2026-05-22T14:51:37.191Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:36.077Z",
+      "data-finalizare": "2026-05-22T14:51:36.077Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:35.042Z",
+      "data-finalizare": "2026-05-22T14:51:35.042Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:49:34.044Z",
+      "data-finalizare": "2026-05-22T14:51:34.044Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:32.932Z",
+      "data-finalizare": "2026-05-22T14:51:32.932Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:31.618Z",
+      "data-finalizare": "2026-05-22T14:51:31.618Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:30.573Z",
+      "data-finalizare": "2026-05-22T14:51:30.573Z",
+      "reducere": 25
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:29.545Z",
+      "data-finalizare": "2026-05-22T14:51:29.545Z",
+      "reducere": 15
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:28.566Z",
+      "data-finalizare": "2026-05-22T14:51:28.566Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:49:27.555Z",
+      "data-finalizare": "2026-05-22T14:51:27.555Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:49:26.523Z",
+      "data-finalizare": "2026-05-22T14:51:26.523Z",
+      "reducere": 50
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:25.473Z",
+      "data-finalizare": "2026-05-22T14:51:25.473Z",
+      "reducere": 10
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:24.464Z",
+      "data-finalizare": "2026-05-22T14:51:24.464Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "piesă de schimb",
+      "data-incepere": "2026-05-22T14:49:23.493Z",
+      "data-finalizare": "2026-05-22T14:51:23.493Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "jucărie",
+      "data-incepere": "2026-05-22T14:49:22.402Z",
+      "data-finalizare": "2026-05-22T14:51:22.402Z",
+      "reducere": 45
+    },
+    {
+      "categorie": "utilitar",
+      "data-incepere": "2026-05-22T14:49:21.340Z",
+      "data-finalizare": "2026-05-22T14:51:21.340Z",
+      "reducere": 40
+    },
+    {
+      "categorie": "decorațiune",
+      "data-incepere": "2026-05-22T14:49:20.294Z",
+      "data-finalizare": "2026-05-22T14:51:20.294Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "prototip",
+      "data-incepere": "2026-05-22T14:49:19.284Z",
+      "data-finalizare": "2026-05-22T14:51:19.284Z",
+      "reducere": 15
+    }
+  ]
+}

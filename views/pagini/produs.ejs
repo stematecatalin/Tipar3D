@@ -1,0 +1,146 @@
+<%- include('../fragmente/head') %>
+<body>
+    <%- include('../fragmente/header') %>
+    <main>
+        <div class="grid-container">
+            <article class="produs-detaliat" style="grid-column: 1/-1; border: 3px solid var(--accent); padding: 30px; border-radius: 15px; background: white;">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="m-0"><%= produs.nume %></h2>
+                    <% /* #BONUS 18 */ %>
+                    <% 
+                    const T_ZILE_DET = 30;
+                    const dDet = new Date(produs.data_adaugare);
+                    const esteNouDet = (new Date() - dDet) / (1000 * 3600 * 24) <= T_ZILE_DET;
+                    if (esteNouDet) { %>
+                        <span class="badge bg-danger p-2 fs-5 shadow">PRODUS NOU</span>
+                    <% } %>
+                    <% /* ##### */ %>
+                </div>
+                <div class="container-detalii" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px;">
+                    <div class="imagine-produs d-flex align-items-center gap-2">
+                        <% /* #BONUS 9 */ %>
+                        <div class="control-stanga">
+                            <button class="btn btn-primary rounded-circle p-2 shadow-sm" type="button" data-bs-target="#carouselProdus" data-bs-slide="prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                        </div>
+
+                        <div id="carouselProdus" class="carousel slide flex-grow-1" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded-3 shadow">
+                                <div class="carousel-item active">
+                                    <img src="/resurse/imagini/produse/<%= produs.imagine %>" class="d-block w-100" alt="<%= produs.nume %>">
+                                </div>
+                                <% for(let i=1; i<=4; i++) { %>
+                                    <div class="carousel-item">
+                                        <img src="/resurse/imagini/produse/variatii/<%= produs.imagine.split('.')[0] %>_<%= i %>.webp" class="d-block w-100" alt="<%= produs.nume %> - Varianta <%= i %>">
+                                    </div>
+                                <% } %>
+                            </div>
+                        </div>
+
+                        <div class="control-dreapta">
+                            <button class="btn btn-primary rounded-circle p-2 shadow-sm" type="button" data-bs-target="#carouselProdus" data-bs-slide="next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <% /* ##### */ %>
+                    </div>
+                    <div class="date-tehnice">
+                        <% /* #BONUS 12 */ %>
+                        <% 
+                        let pretV = null;
+                        let pretC = produs.pret;
+                        if (locals.oferta && oferta.categorie === produs.categorie) {
+                            pretV = produs.pret;
+                            pretC = (parseFloat(produs.pret) * (1 - oferta.reducere / 100)).toFixed(2);
+                        }
+                        %>
+                        <p><strong>Pret:</strong> 
+                            <% if (pretV) { %>
+                                <span class="text-decoration-line-through text-secondary small me-2"><%= pretV %> lei</span>
+                                <span class="text-danger fw-bold fs-4"><%= pretC %> lei</span>
+                                <span class="badge bg-danger ms-2">OFERTĂ -<%= oferta.reducere %>%</span>
+                            <% } else { %>
+                                <%= pretC %> lei
+                            <% } %>
+                        </p>
+                        <% /* ##### */ %>
+                        <p><strong>Categorie:</strong> <%= produs.categorie %></p>
+                        <p><strong>Tip produs:</strong> <%= produs.tip_produs %></p>
+                        <p><strong>Greutate:</strong> <%= produs.greutate_grame %> g</p>
+                        <p><strong>Dimensiune maxima:</strong> <%= produs.dimensiune_max_cm %> cm</p>
+                        <p><strong>Culoare principala:</strong> <%= produs.culoare_principala %></p>
+                        <p><strong>Materiale compatibile:</strong> <%= produs.materiale_compatibile %></p>
+                        <p><strong>Finisat manual:</strong> <%= produs.finisat_manual ? "Da" : "Nu" %></p>
+                        <p><strong>Data adaugare:</strong> <%= produs.data_adaugare.toLocaleDateString("ro-RO") %></p>
+                        
+                        <div class="descriere-completa" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+                            <h4>Descriere</h4>
+                            <p><%= produs.descriere %></p>
+                        </div>
+
+                        <% /* #BONUS 17 */ %>
+                        <% if (locals.seturi && seturi.length > 0) { %>
+                            <div class="seturi-asociate mt-4 p-4 border rounded shadow-sm" style="background: var(--card-bg); border-color: var(--accent) !important;">
+                                <h5 class="border-bottom pb-3 mb-4" style="color: var(--primary);">Acest produs face parte din următoarele seturi:</h5>
+                                <div class="list-group list-group-flush">
+                                    <% for(let s of seturi) { %>
+                                        <div class="list-group-item px-0 py-4 bg-transparent border-accent" style="border-bottom: 1px dashed var(--accent);">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="m-0 fs-5"><i class="fa-solid fa-layer-group me-2 text-primary"></i> <strong><%= s.nume %></strong></h6>
+                                                <a href="/seturi" class="btn btn-danger btn-sm shadow-sm fw-bold px-3 rounded-pill">VEZI PACHET (<%= s.pret_total %> lei)</a>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-3 overflow-auto pb-2">
+                                                <% for(let i=0; i < s.produse_info.length; i++) { 
+                                                    let ps = s.produse_info[i]; %>
+                                                    <div class="text-center" style="min-width: 100px;">
+                                                        <a href="/produs/<%= ps.id %>" class="text-decoration-none" title="<%= ps.nume %>">
+                                                            <img src="/resurse/imagini/produse/<%= ps.imagine %>" alt="<%= ps.nume %>" class="rounded shadow-sm border border-accent" style="height: 100px; width: 100px; object-fit: cover; transition: transform 0.2s;">
+                                                            <p class="small mt-2 mb-0 fw-bold text-truncate" style="color: var(--text); max-width: 100px;"><%= ps.nume %></p>
+                                                        </a>
+                                                    </div>
+                                                    <% if (i < s.produse_info.length - 1) { %>
+                                                        <span class="fw-bold text-primary fs-3">+</span>
+                                                    <% } %>
+                                                <% } %>
+                                            </div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                        <% } %>
+                        <% /* ##### */ %>
+                        
+                        <a href="/produse" class="btn" style="display: inline-block; margin-top: 30px; background: var(--primary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Inapoi la lista</a>
+                    </div>
+                </div>
+
+                <% /* #BONUS 16 */ %>
+                <% if (locals.similare && similare.length > 0) { %>
+                    <div class="produse-similare mt-5 pt-4 border-top">
+                        <h3 class="mb-4">Produse Similare din categoria <%= produs.categorie.toUpperCase() %></h3>
+                        <div class="row g-4">
+                            <% for(let ps of similare) { %>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card h-100 border-accent shadow-sm" style="background: var(--card-bg);">
+                                        <a href="/produs/<%= ps.id %>" class="text-decoration-none">
+                                            <img src="/resurse/imagini/produse/<%= ps.imagine %>" class="card-img-top" alt="<%= ps.nume %>" style="height: 200px; object-fit: cover;">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary"><%= ps.nume %></h5>
+                                                <p class="card-text fw-bold text-danger"><%= ps.pret %> lei</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+                <% } %>
+                <% /* ##### */ %>
+            </article>
+        </div>
+    </main>
+    <%- include("../fragmente/footer")%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

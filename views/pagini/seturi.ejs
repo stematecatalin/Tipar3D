@@ -1,0 +1,107 @@
+<%- include('../fragmente/head') %>
+<style>
+    .set-container {
+        border: 2px solid var(--accent);
+        border-radius: 20px;
+        background-color: var(--card-bg);
+        color: var(--text);
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+    .img-pachet {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 3px solid var(--accent);
+        box-shadow: 0 5px 15px var(--shadow);
+    }
+    .produs-pachet-titlu {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--text);
+        margin-top: 10px;
+        max-width: 130px;
+    }
+    .simbol-plus {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--primary);
+    }
+    .pret-vechi {
+        text-decoration: line-through;
+        color: var(--secondary);
+        opacity: 0.6;
+    }
+    .pret-nou {
+        color: #ff4757;
+        font-weight: 800;
+        font-size: 1.8rem;
+    }
+    .badge-save {
+        background-color: #2ed573;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 50px;
+        font-size: 0.85rem;
+    }
+    .no-arrow::before {
+        content: none !important;
+    }
+</style>
+<body>
+    <%- include('../fragmente/header') %>
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold" style="color: var(--primary);">Pachete Speciale (Seturi)</h1>
+            <p class="lead text-secondary">Cumpără împreună și economisește!</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <% /* #BONUS 17 */ %>
+            <% for(let s of seturi) { %>
+                <div class="col-xl-11 col-12 mb-4">
+                    <article class="set-container shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center text-lg-start mb-5 mb-lg-0 border-end-lg">
+                                <h2 class="h3 mb-3 fw-bold text-primary"><%= s.nume %></h2>
+                                <p class="text-secondary small mb-4"><%= s.descriere %></p>
+                                <div class="mb-2">
+                                    <span class="pret-vechi h5"><%= s.pret_vechi %> lei</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+                                    <span class="pret-nou"><%= s.pret_total %> lei</span>
+                                    <span class="badge-save shadow-sm">REDUCERE</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row g-4 align-items-center justify-content-center">
+                                    <% for(let i=0; i < s.produse.length; i++) { 
+                                        let p = s.produse[i]; %>
+                                        
+                                        <div class="col-auto text-center">
+                                            <a href="/produs/<%= p.id %>" class="text-decoration-none no-arrow d-block">
+                                                <img src="/resurse/imagini/produse/<%= p.imagine %>" alt="<%= p.nume %>" class="img-pachet shadow-sm">
+                                                <p class="produs-pachet-titlu text-truncate"><%= p.nume %></p>
+                                            </a>
+                                        </div>
+
+                                        <% if (i < s.produse.length - 1) { %>
+                                            <div class="col-auto">
+                                                <span class="simbol-plus">+</span>
+                                            </div>
+                                        <% } %>
+
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            <% } %>
+            <% /* ##### */ %>
+        </div>
+    </main>
+    <%- include("../fragmente/footer")%>
+</body>
+</html>

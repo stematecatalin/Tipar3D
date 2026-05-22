@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $n: 7 !default;
 
 #galerie-animata {
@@ -95,25 +97,25 @@ $n: 7 !default;
     1% {
         opacity: 0.4;
     }
-    #{100 / $n * 0.9}% {
+    #{math.div(100, $n) * 0.9}% {
         z-index: 1;
         opacity: 0.4;
     }
-    #{100 / $n}% {
+    #{math.div(100, $n)}% {
         z-index: 10;
         opacity: 1;
     }
-    #{100 / $n * 1.7}% {
+    #{math.div(100, $n) * 1.7}% {
         z-index: 10;
         opacity: 1;
         transform: scaleY(1) rotate(0deg);
     }
-    #{100 / $n * 1.85}% {
+    #{math.div(100, $n) * 1.85}% {
         z-index: 10;
         opacity: 1;
         transform: scaleY(0.4) rotate(0deg);
     }
-    #{100 / $n * 2}% {
+    #{math.div(100, $n) * 2}% {
         z-index: 10;
         opacity: 0;
         transform: scaleY(0.4) rotate(90deg);

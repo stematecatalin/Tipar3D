@@ -1,14 +1,21 @@
 body {
-  --culoare-bg: #4dabf7;
-  --culoare-text: #ffffff;
-  --culoare-submenu: #339af0;
-  --culoare-hover: #74c0fc;
+  --culoare-bg: var(--navbar-bg);
+  --culoare-text: var(--navbar-text);
+  --culoare-submenu: var(--secondary);
+  --culoare-hover: var(--ui);
+}
+
+header {
+  position: relative;
+  z-index: 1000;
 }
 
 #navbar-container {
   width: 100%;
   background: var(--culoare-bg);
   position: relative;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 #navbar-container .navbar {
   list-style: none;
@@ -64,6 +71,7 @@ body {
   left: 50%;
   transform: translateX(-50%) scale(0);
   transform-origin: center;
+  z-index: 2000;
   background: var(--culoare-submenu);
   list-style: none;
   margin: 0;
@@ -81,18 +89,6 @@ body {
 }
 #navbar-container .navbar-submenu li a:hover {
   background: var(--culoare-hover);
-}
-
-.navbar-item:nth-child(1) {
-  z-index: 1;
-}
-
-.navbar-item:nth-child(2) {
-  z-index: 2;
-}
-
-.navbar-item:nth-child(3) {
-  z-index: 3;
 }
 
 .burger {

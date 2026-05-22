@@ -6,7 +6,10 @@
             "nume_imag": "3DBenchy",
             "alternativ": "Barcuta de test",
             "descriere_imag": "3DBenchy este un model de test pentru imprimante 3D",
-            "intervale_ore": [[0, 24]]
+            "intervale_ore": [[0, 24]],
+            "licenta": "CC-BY",
+            "autor": "CreativeTools",
+            "sursa": "https://www.thingiverse.com/thing:763622"
         },
         {
             "cale_relativa": "img1.png",

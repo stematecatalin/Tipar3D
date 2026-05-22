@@ -19,30 +19,29 @@
   margin: 0;
   border: 2px solid var(--accent);
   padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--card-bg);
   transition: all 1.2s ease;
+  border-radius: 10px;
 }
 #grid-galerie figure img {
   width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 5px;
   filter: brightness(50%);
   transition: filter 1.2s ease;
 }
 #grid-galerie figure:hover {
-  transform: scale(1.02);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  background: var(--primary);
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px var(--shadow);
+  border-color: var(--accent);
 }
 #grid-galerie figure:hover img {
   filter: brightness(100%);
 }
 #grid-galerie figure:hover figcaption {
-  color: white;
-}
-#grid-galerie figure:hover .sursa-atribuire a {
-  color: yellow;
+  color: var(--accent);
 }
 #grid-galerie figure .index-galerie::before {
   content: counter(counter-galerie, decimal-leading-zero) ". ";
@@ -50,10 +49,11 @@
   color: var(--secondary);
 }
 #grid-galerie figure figcaption {
-  margin-top: 10px;
-  font-size: 1em;
+  margin-top: 12px;
+  font-size: 1.1em;
   text-align: center;
-  color: #333;
+  color: var(--text);
+  transition: color 1.2s ease;
 }
 
 @media (min-width: 1101px) {

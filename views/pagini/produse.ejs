@@ -1,0 +1,410 @@
+<%- include('../fragmente/head') %>
+<style>
+    .zona-filtre {
+        background-color: var(--card-bg) !important;
+        border-color: var(--accent) !important;
+        color: var(--text) !important;
+    }
+    .produs {
+        background-color: var(--card-bg) !important;
+        border-color: var(--accent) !important;
+        color: var(--text) !important;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .produs:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px var(--shadow);
+        border-color: var(--primary) !important;
+    }
+    .specs span.badge {
+        background-color: var(--primary) !important;
+        color: white !important;
+    }
+    body.light .specs span.badge {
+        background-color: var(--accent) !important;
+        color: var(--text) !important;
+    }
+    #modalProdus .specs, #modalProdus p {
+        color: var(--text) !important;
+    }
+    .filtru-label, .zona-filtre label {
+        color: var(--secondary) !important;
+    }
+    body.dark .form-floating > label {
+        color: #ccc !important;
+    }
+    body.dark .form-floating > .form-control:focus ~ label,
+    body.dark .form-floating > .form-control:not(:placeholder-shown) ~ label {
+        color: var(--primary) !important;
+    }
+    body.dark .form-control, body.dark .form-select {
+        background-color: #2a2a2a;
+        color: #eee;
+        border-color: var(--accent);
+    }
+    body.dark .form-control::placeholder {
+        color: #aaa !important;
+    }
+    body.dark .form-control:focus, body.dark .form-select:focus {
+        background-color: #333;
+        color: #fff;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 0.25rem rgba(127, 157, 245, 0.25);
+    }
+    body.dark .form-range::-webkit-slider-runnable-track { background-color: var(--accent); }
+    body.dark .form-range::-moz-range-track { background-color: var(--accent); }
+
+    .form-control.is-invalid, .form-select.is-invalid {
+        border-color: #dc3545 !important;
+        background-image: none !important;
+        box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+    }
+    .form-floating > .form-control.is-invalid ~ label {
+        color: #dc3545 !important;
+    }
+
+    /* #BONUS 11 */
+    #modalProdus .modal-content {
+        background-color: var(--card-bg) !important;
+        color: var(--text) !important;
+        border: 2px solid var(--accent) !important;
+    }
+    #modalProdus .modal-header {
+        border-bottom: 1px solid var(--accent) !important;
+    }
+    #modalProdus .modal-footer {
+        border-top: 1px solid var(--accent) !important;
+    }
+    .produs {
+        cursor: pointer;
+    }
+    /* ##### */
+
+    /* #BONUS 5 */
+    .ascuns-paginare {
+        display: none !important;
+    }
+    /* ##### */
+
+    /* #BONUS 18 */
+    @keyframes pulse-animation {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    .animate-pulse {
+        animation: pulse-animation 2s infinite;
+        display: inline-block;
+    }
+    /* ##### */
+
+    /* #BONUS 14 */
+    .produs-ieftin {
+        border: 4px solid #ffc107 !important;
+        box-shadow: 0 0 20px rgba(255, 193, 7, 0.3) !important;
+    }
+    /* ##### */
+
+    .btn-outline-primary, .btn-outline-info {
+        color: var(--text) !important;
+        border-width: 2px;
+    }
+    .btn-check:checked + .btn-outline-primary,
+    .btn-check:checked + .btn-outline-info {
+        color: white !important;
+        background-color: var(--primary) !important;
+        border-color: var(--primary) !important;
+    }
+    body.dark .btn-check:checked + .btn-outline-primary,
+    body.dark .btn-check:checked + .btn-outline-info {
+        color: #000 !important;
+        background-color: var(--accent) !important;
+        border-color: var(--accent) !important;
+    }
+    body.dark {
+        --invert-close: invert(1);
+    }
+    :root {
+        --invert-close: invert(0);
+    }
+</style>
+<body>
+    <%- include('../fragmente/header') %>
+    <main class="container-fluid">
+        <form class="row zona-filtre py-4 border rounded-3 mb-4 shadow-sm mx-1" onsubmit="return false;">
+            <h2 class="col-12 border-bottom border-accent mb-4 pb-2" style="color: var(--primary);">Gestiune Produse</h2>
+            
+            <div class="col-md-4 col-sm-6 mb-3">
+                <% /* bonus 1 - camp nume (text) */ %>
+                <label for="inp-nume" class="form-label fw-bold filtru-label">Nume Produs:</label>
+                <input type="text" id="inp-nume" list="lista-nume" class="form-control" placeholder="Cauta nume..." autocomplete="off">
+                <datalist id="lista-nume">
+                    <% /* bonus 1 - camp datalist */ %>
+                    <% if (locals.toateNumele) { %>
+                        <% for (let p of toateNumele) { %>
+                            <option value="<%= p.nume %>"></option>
+                        <% } %>
+                    <% } %>
+                </datalist>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+                <% /* bonus 1 - camp culori (text) */ %>
+                <label for="inp-culori" class="form-label fw-bold filtru-label">Cauta in culori:</label>
+                <input type="text" id="inp-culori" list="lista-culori" class="form-control" placeholder="ex: negru, alb..." autocomplete="off">
+                <datalist id="lista-culori">
+                    <% /* bonus 1 - camp datalist */ %>
+                    <% if (locals.culori) { %>
+                        <% for (let c of culori) { %>
+                            <option value="<%= c %>"></option>
+                        <% } %>
+                    <% } %>
+                </datalist>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mb-3">
+                <% /* bonus 1 - camp pret (range) */ %>
+                <label class="form-label fw-bold d-block filtru-label">Pret Maxim: (<span id="min-pret-afis">0</span> <span id="info-pret">(100)</span> <span id="max-pret-afis">100</span>)</label>
+                <input type="range" id="inp-pret" min="0" max="100" step="1" value="100" class="form-range">
+                <% /* ##### */ %>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+                <% /* bonus 1 - camp finisat (radio) */ %>
+                <label class="form-label fw-bold d-block filtru-label">Finisat manual:</label>
+                <div class="btn-group w-100" role="group">
+                    <input type="radio" class="btn-check" name="gr_rad" id="rad-toate" value="toate" checked>
+                    <label class="btn btn-outline-primary" for="rad-toate">Oricare</label>
+                    <input type="radio" class="btn-check" name="gr_rad" id="rad-da" value="da">
+                    <label class="btn btn-outline-primary" for="rad-da">Da</label>
+                    <input type="radio" class="btn-check" name="gr_rad" id="rad-nu" value="nu">
+                    <label class="btn btn-outline-primary" for="rad-nu">Nu</label>
+                </div>
+                <% /* ##### */ %>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+                <% /* bonus 1 - camp tip produs (checkbox) */ %>
+                <label class="form-label fw-bold d-block filtru-label">Tip Produs:</label>
+                <div class="btn-group w-100 flex-wrap" role="group" id="check-subcat">
+                    <% for (let tip of tipuriProduse) { %>
+                        <input type="checkbox" class="btn-check chk-sub" id="chk-<%= tip %>" value="<%= tip %>" checked>
+                        <label class="btn btn-outline-info text-capitalize" for="chk-<%= tip %>"><%= tip %></label>
+                    <% } %>
+                </div>
+                <% /* ##### */ %>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mb-3">
+                <% /* bonus 1 - camp descriere (textarea) */ %>
+                <div class="form-floating">
+                    <textarea class="form-control" id="inp-descriere" placeholder=" " style="height: 100px"></textarea>
+                    <label for="inp-descriere" class="filtru-label">Cuvinte cheie descriere</label>
+                    <div class="invalid-feedback">Descrierea trebuie sa aiba minim 3 caractere.</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 mb-3">
+                <% /* bonus 1 - camp categorie (select) */ %>
+                <label for="sel-categorie" class="form-label fw-bold filtru-label">Categorie:</label>
+                <select id="sel-categorie" class="form-select">
+                    <option value="toate" selected>oricare</option>
+                    <% if (locals.categorii) { %>
+                        <% for (let cat of categorii) { %>
+                            <option value="<%= cat %>"><%= cat %></option>
+                        <% } %>
+                    <% } %>
+                </select>
+                <% /* ##### */ %>
+            </div>
+
+            <div class="col-md-6 col-sm-6 mb-3">
+                <% /* #BONUS 1 */ %>
+                <label for="sel-exclude" class="form-label fw-bold filtru-label">Materiale pe care NU le doriți:</label>
+                <select id="sel-exclude" multiple class="form-select" style="height: 100px;">
+                    <% for (let mat of materiale) { %>
+                        <option value="<%= mat %>"><%= mat %></option>
+                    <% } %>
+                </select>
+                <% /* ##### */ %>
+            </div>
+
+            <div class="col-12 mt-4 d-flex flex-wrap gap-2 justify-content-center border-top pt-4">
+                <button id="filtrare" class="btn btn-primary">
+                    <i class="fa-solid fa-filter"></i>
+                    <span class="d-none d-sm-inline">Filtreaza</span>
+                </button>
+                <button id="calculeaza" class="btn btn-success">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span class="d-none d-sm-inline">Calculeaza</span>
+                </button>
+                <button id="resetare" class="btn btn-danger">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span class="d-none d-sm-inline">Resetare Filtre</span>
+                </button>
+            </div>
+        </form>
+
+        <section id="lista-produse" class="row">
+            <div class="col-12 d-flex flex-wrap justify-content-between align-items-center mb-4 border-bottom pb-3">
+                <h2 class="m-0">Catalog Produse</h2>
+
+                <% /* #BONUS 8 */ %>
+                <div class="d-flex flex-wrap gap-2 align-items-center mt-2 mt-md-0">
+                    <span class="fw-bold small text-secondary">Sortare:</span>
+                    <select id="sel-sort-1" class="form-select form-select-sm" style="width: auto;">
+                        <option value="tip">Tip Produs</option>
+                        <option value="pret" selected>Preț</option>
+                        <option value="nume">Nume</option>
+                        <option value="categorie">Categorie</option>
+                    </select>
+                    <select id="sel-sort-2" class="form-select form-select-sm" style="width: auto;">
+                        <option value="nume" selected>Nume</option>
+                        <option value="pret">Preț</option>
+                        <option value="tip">Tip Produs</option>
+                        <option value="categorie">Categorie</option>
+                    </select>
+                    <div class="btn-group btn-group-sm">
+                        <button id="sort-pret-asc" class="btn btn-outline-info" title="Sort Ascendent">
+                            <i class="fa-solid fa-arrow-up-wide-short"></i>
+                        </button>
+                        <button id="sort-pret-desc" class="btn btn-outline-info" title="Sort Descendent">
+                            <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        </button>
+                    </div>
+                </div>
+                <% /* ##### */ %>
+            </div>
+
+            <% /* #BONUS 15 */ %>
+            <div class="col-12 mb-3">
+                <p class="text-secondary fw-bold">Total produse afișate: <span id="nr-produse"><%= produse.length %></span></p>
+            </div>
+            <% /* ##### */ %>
+            <% /* #BONUS 3 */ %>
+            <div id="mesaj-nu-produse" class="col-12 text-center py-5 d-none">
+                <h3 class="text-muted">Nu există produse conform filtrării curente.</h3>
+                <i class="fa-solid fa-magnifying-glass fa-3x mt-3 text-accent"></i>
+            </div>
+            <% /* ##### */ %>
+            <div id="grid-produse" class="col-12 d-flex flex-column gap-4">
+                <% 
+                const luni = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+                const zileSapt = ["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+                
+                for (let produs of produse) { 
+                    let d = new Date(produs.data_adaugare);
+                    let dataFormata = `${d.getDate()}-${luni[d.getMonth()]}-${d.getFullYear()} [${zileSapt[d.getDay()]}]`;
+
+                    /* #BONUS 18 */
+                    const T_ZILE = 30;
+                    const diferentaTimp = new Date() - d;
+                    const esteNou = diferentaTimp / (1000 * 3600 * 24) <= T_ZILE;
+                    /* ##### */
+
+                    /* #BONUS 14 */
+                    let refIeftin = ieftine.find(i => i.categorie == produs.categorie);
+                    let esteCelMaiIeftin = refIeftin && parseFloat(produs.pret) == parseFloat(refIeftin.minim);
+                    /* ##### */
+                %>
+                    <article id="ar_ent_<%= produs.id %>" class="produs row mx-1 p-4 border rounded-4 shadow-sm <%= produs.categorie.replace(/ /g, '_') %> <%= esteCelMaiIeftin ? 'produs-ieftin' : '' %>">
+                        <div class="col-12 d-flex justify-content-between align-items-start mb-3">
+                            <h3 class="nume m-0"><%= produs.nume %></h3>
+                            <% /* #BONUS 18 */ %>
+                            <% if (esteNou) { %>
+                                <span class="badge bg-danger p-2 shadow-sm animate-pulse">NOU</span>
+                            <% } %>
+                            <% /* ##### */ %>
+                        </div>
+                        <% /* #BONUS 14 */ %>
+                        <% if (esteCelMaiIeftin) { %>
+                            <div class="col-12 mb-3">
+                                <span class="badge bg-warning text-dark p-2 border border-dark rounded-pill">
+                                    <i class="fa-solid fa-star"></i> CEL MAI IEFTIN DIN CATEGORIA <%= produs.categorie.toUpperCase() %>
+                                </span>
+                            </div>
+                        <% } %>
+                        <% /* ##### */ %>
+                        <div class="col-md-5 coloana-1">
+                            <p><span class="badge bg-secondary mb-3">Categorie: <span class="val-categorie"><%= produs.categorie %></span></span></p>
+                            <figure class="mb-3">
+                                <img src="/resurse/imagini/produse/<%= produs.imagine %>" alt="<%= produs.nume %>" class="img-fluid rounded-3 border">
+                            </figure>
+                            <p class="fst-italic"><span class="val-descriere"><%= produs.descriere %></span></p>
+                        </div>
+                        <div class="col-md-7 coloana-2 d-flex flex-column justify-content-between">
+                            <div class="specs">
+                                <% /* #BONUS 12 */ %>
+                                <% 
+                                let pretVechi = null;
+                                let pretCurent = produs.pret;
+                                if (locals.oferta && oferta.categorie === produs.categorie) {
+                                    pretVechi = produs.pret;
+                                    pretCurent = (parseFloat(produs.pret) * (1 - oferta.reducere / 100)).toFixed(2);
+                                }
+                                %>
+                                <p class="mb-2">
+                                    <span class="badge me-2 p-2">Pret:</span> 
+                                    <% if (pretVechi) { %>
+                                        <span class="text-decoration-line-through text-secondary me-1 small"><%= pretVechi %></span>
+                                        <span class="val-pret fw-bold text-danger"><%= pretCurent %></span> lei
+                                        <span class="badge bg-danger ms-1">-<%= oferta.reducere %>%</span>
+                                    <% } else { %>
+                                        <span class="val-pret fw-bold"><%= pretCurent %></span> lei
+                                    <% } %>
+                                </p>
+                                <% /* ##### */ %>
+                                <p class="mb-2"><span class="badge me-2 p-2">Tip Produs:</span> <span class="val-tip fw-bold text-capitalize"><%= produs.tip_produs %></span></p>
+                                <p class="mb-2"><span class="badge me-2 p-2">Materiale:</span> <span class="val-materiale fw-bold"><%= produs.materiale_compatibile %></span></p>
+                                <p class="mb-2"><span class="badge me-2 p-2">Culori:</span> <span class="val-culori fw-bold"><%= produs.culori_disponibile %></span></p>
+                                <p class="mb-2"><span class="badge me-2 p-2">Data Oferta:</span> <time datetime="<%= produs.data_adaugare.toISOString() %>" class="fw-bold"><%= dataFormata %></time></p>
+                                <p class="mb-2"><span class="badge me-2 p-2">Finisat Manual:</span> <span class="val-finisat fw-bold"><%= produs.finisat_manual ? "da" : "nu" %></span></p>
+                            </div>
+                            <a href="/produs/<%= produs.id %>" class="btn btn-outline-primary align-self-start mt-3 fw-bold">Detalii Complete <i class="fa-solid fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </article>
+                <% } %>
+            </div>
+
+            <% /* #BONUS 5 */ %>
+            <nav aria-label="Product pagination" class="mt-5">
+                <ul id="paginatie" class="pagination justify-content-center">
+                </ul>
+            </nav>
+            <% /* ##### */ %>
+
+            <% /* #BONUS 11 */ %>
+            <div class="modal fade" id="modalProdus" tabindex="-1" aria-labelledby="modalProdusLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProdusLabel">Nume Produs</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: var(--invert-close);"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6" id="modal-imagine-container">
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="modal-date"></div>
+                                    <hr>
+                                    <h6>Descriere</h6>
+                                    <p id="modal-descriere"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% /* ##### */ %>
+        </section>
+    </main>
+    <%- include("../fragmente/footer")%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/resurse/js/produse.js"></script>
+</body>
+</html>
+</html>

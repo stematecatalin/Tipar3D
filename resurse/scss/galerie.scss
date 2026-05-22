@@ -1,3 +1,5 @@
+@use "sass:list";
+
 $numar-imagini-ciclu: 6;
 $pattern-coloane: (2, 3, 1, 3, 1, 2);
 
@@ -10,6 +12,7 @@ $pattern-coloane: (2, 3, 1, 3, 1, 2);
 }
 
 #grid-galerie {
+   //grid-auto-flow: dense;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -22,33 +25,31 @@ $pattern-coloane: (2, 3, 1, 3, 1, 2);
         margin: 0;
         border: 2px solid var(--accent);
         padding: 10px;
-        background: rgba(255, 255, 255, 0.8);
+        background: var(--card-bg);
         transition: all 1.2s ease;
+        border-radius: 10px;
 
         img {
             width: 100%;
             max-width: 100%;
             height: auto;
             display: block;
+            border-radius: 5px;
             filter: brightness(50%);
             transition: filter 1.2s ease;
         }
 
         &:hover {
-            transform: scale(1.02);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            background: var(--primary);
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px var(--shadow);
+            border-color: var(--accent);
             
             img {
                 filter: brightness(100%);
             }
 
             figcaption {
-                color: white;
-            }
-            
-            .sursa-atribuire a {
-                color: yellow;
+                color: var(--accent);
             }
         }
 
@@ -59,24 +60,25 @@ $pattern-coloane: (2, 3, 1, 3, 1, 2);
         }
 
         figcaption {
-            margin-top: 10px;
-            font-size: 1em;
+            margin-top: 12px;
+            font-size: 1.1em;
             text-align: center;
-            color: #333;
+            color: var(--text);
+            transition: color 1.2s ease;
         }
     }
 }
-
+//magia grid-auto-flow: row; implicit
 @media (min-width: 1101px) {
     #grid-galerie {
         @for $i from 1 through $numar-imagini-ciclu {
-            $coloana: nth($pattern-coloane, $i);
+            $coloana: list.nth($pattern-coloane, $i);
             
             figure:nth-child(#{$numar-imagini-ciclu}n + #{$i}) {
                 grid-column: $coloana;
             }
         }
-    }
+    }   
 }
 
 @media (max-width: 1100px) {

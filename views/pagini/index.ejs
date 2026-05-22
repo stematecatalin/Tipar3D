@@ -2,6 +2,53 @@
 <body>
     <%- include('../fragmente/header') %>
     <main>
+
+    <% /* #BONUS 12 */ %>
+    <% if (locals.oferta) { %>
+        <section id="anunt-oferta" class="container-fluid mb-4">
+            <div class="alert alert-warning border-danger shadow p-4 text-center" style="background: linear-gradient(135deg, var(--card-bg) 0%, rgba(255, 193, 7, 0.1) 100%);">
+                <h2 class="text-danger fw-bold mb-3"><i class="fa-solid fa-fire-flame-curved me-2"></i> OFERTĂ FLASH! <i class="fa-solid fa-fire-flame-curved ms-2"></i></h2>
+                <p class="fs-4">
+                    Reducere de <span class="badge bg-danger fs-3"><%= oferta.reducere %>%</span> 
+                    la categoria <span class="text-primary fw-bold text-uppercase"><%= oferta.categorie %></span>!
+                </p>
+                <div class="mt-3">
+                    <span class="text-secondary fw-bold">EXPIRĂ ÎN:</span>
+                    <div id="countdown" class="d-inline-block ms-2 fs-2 fw-black font-monospace text-dark" 
+                         data-finalizare="<%= oferta['data-finalizare'] %>">
+                        00:00:00
+                    </div>
+                </div>
+                <a href="/produse?categorie=<%= oferta.categorie %>" class="btn btn-danger btn-lg mt-3 px-5 rounded-pill shadow-sm">Profită Acum!</a>
+            </div>
+        </section>
+    <% } %>
+    <% /* ##### */ %>
+    
+    <% /* #BONUS 18 */ %>
+    <section id="produse-noi" class="container-fluid mb-5 pt-4">
+        <h2 class="text-center mb-4 border-bottom border-accent pb-2">Produse Noi</h2>
+        <div class="row g-4 justify-content-center">
+            <% for(let p of produseNoi) { %>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100 shadow-sm border-accent" style="background: var(--card-bg); color: var(--text);">
+                        <div class="position-relative">
+                            <img src="/resurse/imagini/produse/<%= p.imagine %>" class="card-img-top" alt="<%= p.nume %>" style="height: 250px; object-fit: cover;">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2 p-2 shadow">NOU</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary"><%= p.nume %></h5>
+                            <p class="card-text small text-secondary flex-grow-1"><%= p.descriere.substring(0, 80) %>...</p>
+                            <p class="fw-bold mt-2"><%= p.pret %> lei</p>
+                            <a href="/produs/<%= p.id %>" class="btn btn-outline-primary btn-sm w-100 mt-2">Detalii Produs</a>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </section>
+    <% /* ##### */ %>
+
     <div class="grid-container">
         <div class="zona1">
             <div id="text-zona1">
@@ -63,23 +110,45 @@
 <th>Utilizare recomandata</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="grup-material">
 <tr>
-<td>PLA</td>
-<td>0.25 lei / gram</td>
-<td>Medie</td>
-<td>Figurine decorative, prototipuri si obiecte usoare</td>
+<td rowspan="2">PLA</td>
+<td rowspan="2">0.25 lei / gram</td>
+<td rowspan="2">Medie</td>
+<td>Figurine decorative</td>
 </tr>
 <tr>
-<td>PETG</td>
-<td>0.35 lei / gram</td>
-<td>Ridicata</td>
-<td>Piese functionale, suporturi si accesorii tehnice</td>
+<td>Prototipuri si obiecte usoare</td>
 </tr>
+</tbody>
+<tbody class="grup-material">
+<tr>
+<td rowspan="2">PETG</td>
+<td rowspan="2">0.35 lei / gram</td>
+<td rowspan="2">Ridicata</td>
+<td>Piese functionale</td>
+</tr>
+<tr>
+<td>Suporturi si accesorii tehnice</td>
+</tr>
+</tbody>
+<tbody class="grup-material">
+<tr>
+<td rowspan="2">ABS</td>
+<td rowspan="2">0.40 lei / gram</td>
+<td rowspan="2">Ridicata</td>
+<td>Piese rezistente la temperatura</td>
+</tr>
+<tr>
+<td>Carcase si componente mecanice</td>
+</tr>
+</tbody>
+<tbody class="grup-material">
 <tr>
 <td>TPU</td>
 <td>0.50 lei / gram</td>
-<td colspan="2">Flexibil – piese elastice si protectii</td>
+<td>Flexibil</td>
+<td>Piese elastice si protectii</td>
 </tr>
 </tbody>
 <tfoot>
